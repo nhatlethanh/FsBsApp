@@ -1,4 +1,4 @@
-package com.fsbs.src.module.explore.presenter;
+package com.fsbs.src.module.home.presenter;
 
 public interface IBanner {
     interface IPresenterBanner{

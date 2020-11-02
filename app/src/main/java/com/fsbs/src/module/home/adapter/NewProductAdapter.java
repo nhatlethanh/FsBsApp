@@ -1,4 +1,4 @@
-package com.fsbs.src.module.explore.adapter;
+package com.fsbs.src.module.home.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -20,7 +20,7 @@ import java.util.Random;
 
 
 import com.fsbs.src.model.Product;
-import com.fsbs.src.module.explore.IOnClickProduct;
+import com.fsbs.src.module.home.IOnClickProduct;
 import com.fsbs.src.network.EndPoint;
 
 public class NewProductAdapter extends RecyclerView.Adapter<NewProductAdapter.ViewHolderNewProduct> {

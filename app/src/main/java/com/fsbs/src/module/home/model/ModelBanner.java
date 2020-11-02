@@ -1,4 +1,4 @@
-package com.fsbs.src.module.explore.model;
+package com.fsbs.src.module.home.model;
 
 import android.util.Log;
 
@@ -9,7 +9,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import com.fsbs.src.model.BaseResponse;
 import com.fsbs.src.model.Images;
-import com.fsbs.src.module.explore.presenter.PresenterBanner;
+import com.fsbs.src.module.home.presenter.PresenterBanner;
 import com.fsbs.src.network.APIFsBs;
 import com.fsbs.src.network.EndPoint;
 import com.fsbs.src.network.IApiFsBs;

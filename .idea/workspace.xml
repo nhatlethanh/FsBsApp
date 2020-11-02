@@ -13,11 +13,36 @@
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df57991d-b4de-4748-af8a-7208ab6910d3" name="Default Changelist" comment="Nhật nè">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="df57991d-b4de-4748-af8a-7208ab6910d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/NavigationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/NavigationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/cate/view/ProductForCateActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/cate/view/ProductForCateActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/IOnClickProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/IOnClickProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/adapter/NewProductAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/adapter/NewProductAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/adapter/ReviewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/adapter/ReviewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/model/ModelBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/model/ModelBanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/model/ModelProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/model/ModelProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/IBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/IBanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/IProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/IProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/IProductDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/IProductDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/PresenterBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/PresenterBanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/PresenterProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/PresenterProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/PresenterProductDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/PresenterProductDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/view/AllProductActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/view/AllProductActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/view/ExploreFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/view/ExploreFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/view/ProductDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/view/ProductDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/favourite/view/FavouriteFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/favourite/view/FavouriteFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/myorder/AdapterCartProvisional.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/order/AdapterCartProvisional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/myorder/IOnClickCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/order/IOnClickCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/myorder/IOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/order/IOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/myorder/model/ModelOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/order/model/ModelOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/myorder/presenter/PresenterOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/order/presenter/PresenterOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/myorder/view/MyOrderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/order/view/MyOrderActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_all_product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_all_product.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_order.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_product_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_product_details.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,29 +65,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash_screen.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+            <state relative-caret-position="200">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
             </state>
           </provider>
-          <provider editor-type-id="android-manifest" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/background.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -80,8 +100,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/gradient_black_transparent.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -219,7 +251,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -249,7 +280,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -283,18 +314,36 @@
             <path>
               <item name="FsBsApp" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="fsbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FsBsApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="fsbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FsBsApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="FsBsApp" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -563,7 +612,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604295930228</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Nhật nè">
+      <created>1604296441864</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1604296441864</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Nhật nè">
+      <created>1604296636019</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1604296636019</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -580,7 +643,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21946308" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21946308" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -594,8 +657,8 @@
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="4" />
       <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.4986577" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5026846" side_tool="true" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49731544" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5033557" side_tool="true" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4966443" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49261746" weight="0.3696884" />
       <window_info anchor="bottom" id="Find" order="9" sideWeight="0.49932885" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="10" sideWeight="0.49932885" weight="0.3286119" />
@@ -605,7 +668,7 @@
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info active="true" anchor="right" id="Preview" order="5" visible="true" weight="0.2637584" />
+      <window_info anchor="right" id="Preview" order="5" visible="true" weight="0.2637584" />
       <window_info anchor="right" id="StringPreview" order="6" />
     </layout>
   </component>
@@ -652,20 +715,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Nhật nè" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/myorder/presenter/PresenterOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="27567" column="13" selection-start-line="27567" selection-start-column="13" selection-end-line="27567" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/network/EndPoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -673,70 +722,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/IProduct.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/IProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/IProductDetails.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/IProductDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/PresenterProduct.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/PresenterProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/PresenterProductDetails.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/PresenterProductDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/view/ProductDetailsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/view/ProductDetailsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/view/ExploreFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/view/ExploreFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="167" column="55" lean-forward="true" selection-start-line="167" selection-start-column="55" selection-end-line="167" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/adapter/NewProductAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/adapter/NewProductAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-151">
           <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/adapter/ReviewAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/adapter/ReviewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-222">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/presenter/PresenterBanner.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/presenter/PresenterBanner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="46" lean-forward="true" selection-start-column="46" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/explore/view/AllProductActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/home/view/AllProductActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
@@ -750,7 +799,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/myorder/view/MyOrderActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/order/view/MyOrderActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
@@ -764,7 +813,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/myorder/AdapterCartProvisional.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fsbs/src/module/order/AdapterCartProvisional.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
@@ -844,8 +893,8 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/backgr.png" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
@@ -861,27 +910,22 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/background.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_shopping_cart_black_24dp.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_settings_black_24dp.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_star.png" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash_screen.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        <state relative-caret-position="200">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/custom_border_login.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -892,10 +936,21 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_check_24dp.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_star.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/gradient_black_transparent.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_shopping_cart_black_24dp.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_settings_black_24dp.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>

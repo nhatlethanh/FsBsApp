@@ -1,4 +1,4 @@
-package com.fsbs.src.module.myorder.model;
+package com.fsbs.src.module.order.model;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -13,7 +13,7 @@ import com.fsbs.src.model.ErrorResponse;
 import com.fsbs.src.model.Gift;
 import com.fsbs.src.model.Order;
 import com.fsbs.src.model.OrderDetails;
-import com.fsbs.src.module.myorder.presenter.PresenterOrder;
+import com.fsbs.src.module.order.presenter.PresenterOrder;
 import com.fsbs.src.network.APIFsBs;
 import com.fsbs.src.network.IApiFsBs;
 import com.fsbs.src.utils.ErrorUtils;

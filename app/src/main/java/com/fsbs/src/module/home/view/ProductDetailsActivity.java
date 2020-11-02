@@ -1,4 +1,4 @@
-package com.fsbs.src.module.explore.view;
+package com.fsbs.src.module.home.view;
 
 
 import android.annotation.SuppressLint;
@@ -33,9 +33,9 @@ import com.fsbs.NavigationActivity;
 import com.fsbs.src.model.OrderProvisional;
 import com.fsbs.src.model.Product;
 import com.fsbs.src.model.Review;
-import com.fsbs.src.module.explore.adapter.ReviewAdapter;
-import com.fsbs.src.module.explore.presenter.IProductDetails;
-import com.fsbs.src.module.explore.presenter.PresenterProductDetails;
+import com.fsbs.src.module.home.adapter.ReviewAdapter;
+import com.fsbs.src.module.home.presenter.IProductDetails;
+import com.fsbs.src.module.home.presenter.PresenterProductDetails;
 import com.fsbs.src.network.EndPoint;
 import com.fsbs.src.utils.DialogLoading;
 

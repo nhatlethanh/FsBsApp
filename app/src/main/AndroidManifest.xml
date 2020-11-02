@@ -14,16 +14,16 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name="com.fsbs.MainActivity"/>
         <activity android:name="com.fsbs.NavigationActivity" />
-        <activity android:name="com.fsbs.src.module.explore.view.AllProductActivity"/>
+        <activity android:name="com.fsbs.src.module.home.view.AllProductActivity"/>
         <activity android:name="com.fsbs.src.module.cate.view.ProductForCateActivity" />
         <activity
             android:name="com.fsbs.src.module.register.view.RegisterActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.fsbs.src.module.explore.view.ProductDetailsActivity"
+            android:name="com.fsbs.src.module.home.view.ProductDetailsActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.fsbs.src.module.myorder.view.MyOrderActivity"
+            android:name="com.fsbs.src.module.order.view.MyOrderActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.fsbs.src.module.login.view.LoginActivity"

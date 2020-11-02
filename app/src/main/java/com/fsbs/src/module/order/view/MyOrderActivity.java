@@ -1,4 +1,4 @@
-package com.fsbs.src.module.myorder.view;
+package com.fsbs.src.module.order.view;
 
 
 import android.annotation.SuppressLint;
@@ -36,11 +36,11 @@ import com.fsbs.src.model.Gift;
 import com.fsbs.src.model.Order;
 import com.fsbs.src.model.OrderDetails;
 import com.fsbs.src.model.OrderProvisional;
-import com.fsbs.src.module.explore.view.ExploreFragment;
-import com.fsbs.src.module.myorder.AdapterCartProvisional;
-import com.fsbs.src.module.myorder.IOnClickCart;
-import com.fsbs.src.module.myorder.IOrder;
-import com.fsbs.src.module.myorder.presenter.PresenterOrder;
+import com.fsbs.src.module.home.view.ExploreFragment;
+import com.fsbs.src.module.order.AdapterCartProvisional;
+import com.fsbs.src.module.order.IOnClickCart;
+import com.fsbs.src.module.order.IOrder;
+import com.fsbs.src.module.order.presenter.PresenterOrder;
 import com.fsbs.src.utils.DialogLoading;
 
 /**

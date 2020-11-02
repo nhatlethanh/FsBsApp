@@ -1,9 +1,9 @@
-package com.fsbs.src.module.explore.presenter;
+package com.fsbs.src.module.home.presenter;
 
 import java.util.List;
 
 import com.fsbs.src.model.Product;
-import com.fsbs.src.module.explore.model.ModelProduct;
+import com.fsbs.src.module.home.model.ModelProduct;
 
 public class PresenterProduct implements IProduct.IPresenterProduct {
     private IProduct.IViewProduct iViewProduct;

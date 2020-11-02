@@ -1,4 +1,4 @@
-package com.fsbs.src.module.myorder;
+package com.fsbs.src.module.order;
 
 import android.content.Context;
 import android.view.LayoutInflater;

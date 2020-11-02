@@ -1,4 +1,4 @@
-package com.fsbs.src.module.explore.model;
+package com.fsbs.src.module.home.model;
 
 import android.util.Log;
 
@@ -12,8 +12,8 @@ import com.fsbs.src.model.ErrorResponse;
 import com.fsbs.src.model.Images;
 import com.fsbs.src.model.Product;
 import com.fsbs.src.model.Review;
-import com.fsbs.src.module.explore.presenter.PresenterProduct;
-import com.fsbs.src.module.explore.presenter.PresenterProductDetails;
+import com.fsbs.src.module.home.presenter.PresenterProduct;
+import com.fsbs.src.module.home.presenter.PresenterProductDetails;
 import com.fsbs.src.network.APIFsBs;
 import com.fsbs.src.network.IApiFsBs;
 import com.fsbs.src.utils.ErrorUtils;

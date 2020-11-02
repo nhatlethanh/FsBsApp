@@ -17,9 +17,9 @@ import java.util.List;
 import com.fsbs.src.model.Product;
 import com.fsbs.src.module.cate.ICate;
 import com.fsbs.src.module.cate.presenter.PresenterCate;
-import com.fsbs.src.module.explore.IOnClickProduct;
-import com.fsbs.src.module.explore.adapter.NewProductAdapter;
-import com.fsbs.src.module.explore.view.ProductDetailsActivity;
+import com.fsbs.src.module.home.IOnClickProduct;
+import com.fsbs.src.module.home.adapter.NewProductAdapter;
+import com.fsbs.src.module.home.view.ProductDetailsActivity;
 import com.fsbs.src.utils.DialogLoading;
 import com.fsbs.src.utils.ItemOffsetDecoration;
 

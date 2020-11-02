@@ -22,11 +22,11 @@ import java.util.ArrayList;
 import java.util.List;
 import es.dmoral.toasty.Toasty;
 import com.fsbs.src.model.Product;
-import com.fsbs.src.module.explore.IOnClickProduct;
-import com.fsbs.src.module.explore.adapter.NewProductAdapter;
-import com.fsbs.src.module.explore.presenter.IProduct;
-import com.fsbs.src.module.explore.presenter.PresenterProduct;
-import com.fsbs.src.module.explore.view.ProductDetailsActivity;
+import com.fsbs.src.module.home.IOnClickProduct;
+import com.fsbs.src.module.home.adapter.NewProductAdapter;
+import com.fsbs.src.module.home.presenter.IProduct;
+import com.fsbs.src.module.home.presenter.PresenterProduct;
+import com.fsbs.src.module.home.view.ProductDetailsActivity;
 import com.fsbs.src.utils.DialogLoading;
 import com.fsbs.src.utils.ItemOffsetDecoration;
 

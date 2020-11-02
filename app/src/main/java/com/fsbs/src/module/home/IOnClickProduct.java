@@ -1,4 +1,4 @@
-package com.fsbs.src.module.explore;
+package com.fsbs.src.module.home;
 
 
 import com.fsbs.src.model.Product;

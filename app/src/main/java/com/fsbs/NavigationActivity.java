@@ -16,9 +16,9 @@ import java.util.ArrayList;
 
 import com.fsbs.src.model.OrderProvisional;
 import com.fsbs.src.module.cate.view.CateFragment;
-import com.fsbs.src.module.explore.view.ExploreFragment;
+import com.fsbs.src.module.home.view.ExploreFragment;
 import com.fsbs.src.module.favourite.view.FavouriteFragment;
-import com.fsbs.src.module.myorder.view.MyOrderActivity;
+import com.fsbs.src.module.order.view.MyOrderActivity;
 import com.fsbs.src.module.profile.view.ProfileFragment;
 import com.fsbs.src.utils.ViewPagerNavigationAdapter;
 

@@ -1,10 +1,10 @@
-package com.fsbs.src.module.explore.presenter;
+package com.fsbs.src.module.home.presenter;
 
 import java.util.List;
 
 import com.fsbs.src.model.Images;
 import com.fsbs.src.model.Review;
-import com.fsbs.src.module.explore.model.ModelProduct;
+import com.fsbs.src.module.home.model.ModelProduct;
 import com.fsbs.src.network.EndPoint;
 
 public class PresenterProductDetails implements IProductDetails.IPresenterProductTDetails {

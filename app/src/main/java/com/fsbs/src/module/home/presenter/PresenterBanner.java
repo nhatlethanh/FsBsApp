@@ -1,6 +1,6 @@
-package com.fsbs.src.module.explore.presenter;
+package com.fsbs.src.module.home.presenter;
 
-import com.fsbs.src.module.explore.model.ModelBanner;
+import com.fsbs.src.module.home.model.ModelBanner;
 
 public class PresenterBanner implements IBanner.IPresenterBanner{
     IBanner.IViewBanner iViewBanner;

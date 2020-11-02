@@ -1,12 +1,12 @@
-package com.fsbs.src.module.myorder.presenter;
+package com.fsbs.src.module.order.presenter;
 
 import java.util.List;
 
 import com.fsbs.src.model.Gift;
 import com.fsbs.src.model.Order;
 import com.fsbs.src.model.OrderDetails;
-import com.fsbs.src.module.myorder.IOrder;
-import com.fsbs.src.module.myorder.model.ModelOrder;
+import com.fsbs.src.module.order.IOrder;
+import com.fsbs.src.module.order.model.ModelOrder;
 
 public class PresenterOrder implements IOrder.IPresenterOrder {
     IOrder.IViewOrder iViewOrder;

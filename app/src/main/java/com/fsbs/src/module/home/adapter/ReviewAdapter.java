@@ -1,4 +1,4 @@
-package com.fsbs.src.module.explore.adapter;
+package com.fsbs.src.module.home.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
