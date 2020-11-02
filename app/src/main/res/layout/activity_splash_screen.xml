@@ -18,7 +18,7 @@
             android:layout_marginTop="@dimen/margin30"
             android:lineSpacingMultiplier="1.0"
             android:lines="4"
-            android:text="@string/title_splash"
+            android:text="H E I N"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/text_size_50"
             android:textStyle="bold" />
