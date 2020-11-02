@@ -30,7 +30,7 @@
             android:layout_marginLeft="@dimen/margin20"
             android:layout_marginTop="@dimen/margin30"
             android:layout_marginRight="@dimen/margin20"
-            android:text="@string/login"
+            android:text="ĐĂNG NHẬP"
             android:background="@color/colorWhite"
             android:textAllCaps="false"
             android:textColor="@color/colorBlack"
