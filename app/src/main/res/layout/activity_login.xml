@@ -2,20 +2,14 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:gpb="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorBlack"
-    android:weightSum="10">
-    <com.chabbal.slidingdotsplash.SlidingSplashView
-        android:id="@+id/splashLogin"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_gravity="top" />
+    xmlns:gpb="http://schemas.android.com/apk/res-auto">
+
 
     <LinearLayout
         android:id="@+id/bodyLogin"
         android:layout_width="match_parent"
-        android:layout_height="392dp"
-        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:background="@drawable/custom_border_login"
         android:orientation="vertical">
 

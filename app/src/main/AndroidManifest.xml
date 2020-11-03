@@ -12,10 +12,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.fsbs.MainActivity"/>
-        <activity android:name="com.fsbs.NavigationActivity" />
         <activity android:name="com.fsbs.src.module.home.view.AllProductActivity"/>
         <activity android:name="com.fsbs.src.module.cate.view.ProductForCateActivity" />
+        <activity android:name="com.fsbs.NavigationActivity" />
         <activity
             android:name="com.fsbs.src.module.register.view.RegisterActivity"
             android:windowSoftInputMode="adjustResize" />
@@ -35,6 +34,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.fsbs.MainActivity"/>
+
 
     </application>
 
