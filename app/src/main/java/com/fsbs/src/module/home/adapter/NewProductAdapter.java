@@ -51,6 +51,7 @@ public class NewProductAdapter extends RecyclerView.Adapter<NewProductAdapter.Vi
     public void onBindViewHolder(@NonNull NewProductAdapter.ViewHolderNewProduct holder, int position) {
         Product product = productList.get(position);
         holder.txtNameProduct.setText(product.getName());
+        holder.txtPriceProduct.setText(product.getPrice());
         int randomQuick = new Random().nextInt(7);
         Glide.with(context)
                 .setDefaultRequestOptions(new RequestOptions().placeholder(R.drawable.ic_cart_loading))
@@ -69,7 +70,7 @@ public class NewProductAdapter extends RecyclerView.Adapter<NewProductAdapter.Vi
     }
 
     class ViewHolderNewProduct extends RecyclerView.ViewHolder {
-        TextView txtNameProduct, txtRate, txtComment,txtTitleMar;
+        TextView txtNameProduct, txtRate, txtComment,txtTitleMar,txtPriceProduct;
         RoundedImageView imgProduct;
         CardView layout_item_new_Product;
 
@@ -77,6 +78,7 @@ public class NewProductAdapter extends RecyclerView.Adapter<NewProductAdapter.Vi
             super(itemView);
             layout_item_new_Product = itemView.findViewById(R.id.layout_item_new_Product);
             txtNameProduct = itemView.findViewById(R.id.txtNameProductNew);
+            txtPriceProduct = itemView.findViewById(R.id.txtPriceProductNew);
             imgProduct = itemView.findViewById(R.id.imgProductNew);
             txtNameProduct.setMaxLines(1);
         }
