@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FsBsApp.iml" filepath="$PROJECT_DIR$/FsBsApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FsBsApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FsBsApp.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/slidingdotsplash/FsBsApp.slidingdotsplash.iml" filepath="$PROJECT_DIR$/.idea/modules/slidingdotsplash/FsBsApp.slidingdotsplash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingdotsplash/slidingdotsplash.iml" filepath="$PROJECT_DIR$/slidingdotsplash/slidingdotsplash.iml" />
     </modules>
   </component>
 </project>
