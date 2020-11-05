@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:gpb="http://schemas.android.com/apk/res-auto"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+   >
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -32,12 +33,13 @@
             <TextView
                 android:text="Tạo tài khoản mới"
                 android:textSize="30sp"
-
+                android:textStyle="bold"
                 android:layout_marginTop="@dimen/margin30"
                 android:textColor="@color/colorBlack"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtEmailRegister"
@@ -46,7 +48,7 @@
                 android:layout_marginRight="@dimen/margin30"
                 android:hint="Địa chỉ email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtUserNameRegister"
                 android:layout_marginTop="@dimen/margin30"

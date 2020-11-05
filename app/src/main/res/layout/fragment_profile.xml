@@ -39,13 +39,13 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageProfile"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/avt" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/margin20"
                 android:orientation="vertical">
 
@@ -54,9 +54,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:layout_marginTop="25sp"
+
                     android:textColor="@color/colorBlack"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/text_size_40"
                     tools:text="Tên người dùng" />
 
             </LinearLayout>
@@ -81,10 +81,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
-      
                 android:text="Đổi mật khẩu"
                 android:textColor="@color/colorBlack"
-                android:textSize="@dimen/text_size_20" />
+                android:textSize="@dimen/text_size_30" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -96,6 +95,126 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_phone_24" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+
+                android:text="Số điện thoại"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_30" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:src="@drawable/ic_chevron_right_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_favorite_border_unclick_24dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+
+                android:text="Đã yêu thích"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_30" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:src="@drawable/ic_chevron_right_24dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+
+                android:text="Đơn hàng"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_30" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:src="@drawable/ic_chevron_right_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_exit_to_app_24" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+
+                android:text="Đăng xuất"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_30" />
+
+
+        </LinearLayout>
     </LinearLayout>
 
 

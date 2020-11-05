@@ -24,6 +24,7 @@
             android:textStyle="bold" />
 
         <Button
+
             android:id="@+id/btnLoginSplash"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +32,7 @@
             android:layout_marginTop="@dimen/margin30"
             android:layout_marginRight="@dimen/margin20"
             android:text="ĐĂNG NHẬP"
-            android:background="@color/colorWhite"
+            android:background="@drawable/custom_button_splash_screen"
             android:textAllCaps="false"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/text_size_20" />
