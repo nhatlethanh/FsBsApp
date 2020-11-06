@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin30"
                 android:background="@color/colorBlack"
-                android:text="@string/sign_up"
+                android:text="Đăng kí"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/text_size_20" />
