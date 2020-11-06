@@ -4,19 +4,16 @@
         android:id="@+id/navigation_explore"
         android:icon="@drawable/home"
         android:title="Trang chủ" />
-
     <item
         android:id="@+id/navigation_my_order"
         android:icon="@drawable/cate"
         android:title="Danh mục" />
-
     <item
         android:id="@+id/navigation_favourite"
         android:icon="@drawable/ic_heart"
         android:title="Yêu thích" />
-
     <item
         android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_perm_identity_unclick_24dp"
+        android:icon="@drawable/ic_profile"
         android:title="Tài khoản" />
 </menu>

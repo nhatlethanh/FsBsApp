@@ -4,6 +4,7 @@ package com.fsbs.src.module.profile.view;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -29,6 +30,7 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.fsbs.R;
+import com.fsbs.src.module.login.view.LoginActivity;
 import com.google.android.material.textfield.TextInputEditText;
 import com.jpardogo.android.googleprogressbar.library.GoogleProgressBar;
 
@@ -51,12 +53,12 @@ import static android.content.Context.MODE_PRIVATE;
 public class ProfileFragment extends Fragment implements IViewProfile, View.OnClickListener {
 
     private PresenterProfile presenterProfile;
-    private TextView txtNameProfile;
+    private TextView txtNameProfile,logout;
     private GoogleProgressBar progressBarProfile;
     private ImageView imgProfile, imageProfileUpload;
-    private LinearLayout layoutChangePassword;
+    private LinearLayout layoutChangePassword,layoutLogout;
     private String realPathImages;
-    private Dialog dialogChanePass;
+    private Dialog dialogChanePass,dialogLogout;
 
 
     @Override
@@ -76,6 +78,7 @@ public class ProfileFragment extends Fragment implements IViewProfile, View.OnCl
         progressBarProfile = v.findViewById(R.id.progressBarProfile);
         imgProfile = v.findViewById(R.id.imageProfile);
         layoutChangePassword = v.findViewById(R.id.layoutChangePassword);
+        layoutLogout = v.findViewById(R.id.layoutLogout);
         layoutChangePassword.setOnClickListener(this);
     }
     @Override
@@ -124,9 +127,11 @@ public class ProfileFragment extends Fragment implements IViewProfile, View.OnCl
             case R.id.layoutChangePassword:
                 handlerChangePassword();
                 break;
+
         }
 
     }
+
 
     private void handlerChangePassword() {
         dialogChanePass = new Dialog(Objects.requireNonNull(getActivity()));

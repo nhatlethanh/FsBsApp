@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:navigationIcon="@drawable/ic_keyboard_backspace_24dp"
-        android:title="@string/my_order"
+        android:title="Giỏ hàng của bạn"
         android:titleTextColor="@color/colorBlack" />
 
     <LinearLayout

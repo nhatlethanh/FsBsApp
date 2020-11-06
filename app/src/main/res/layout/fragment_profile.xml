@@ -138,7 +138,7 @@
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="2"
-                android:src="@drawable/ic_favorite_border_unclick_24dp" />
+                android:src="@drawable/ic_heart" />
 
             <TextView
                 android:layout_width="0dp"
@@ -191,6 +191,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/layoutLogout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin20"
@@ -206,9 +207,9 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/logout"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
-
                 android:text="Đăng xuất"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/text_size_30" />

@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/custom_border_login"
         android:orientation="vertical">
 
         <TextView
@@ -18,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="H E I N "
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/colorPink"
             android:textSize="30sp"
             android:layout_marginTop="20dp"
             android:textStyle="bold" />
@@ -46,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin30"
-            android:background="@color/colorBlack"
+            android:background="@color/colorPink"
             android:text="@string/login"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"

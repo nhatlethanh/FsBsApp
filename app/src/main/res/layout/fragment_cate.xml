@@ -10,14 +10,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_margin="@dimen/margin20"
         android:text="Danh mục"
-        android:textColor="#000000"
+        android:textColor="@color/colorPink"
         android:textSize="@dimen/text_size_50" />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerCate"
-        android:layout_margin="@dimen/margin10"
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>

@@ -19,7 +19,7 @@
             android:layout_margin="@dimen/margin20"
             android:textStyle="bold"
             android:text="Tất cả sản phẩm"
-            android:textColor="#000"
+            android:textColor="@color/colorPink"
             android:textSize="@dimen/text_size_30" />
 
         <androidx.recyclerview.widget.RecyclerView
