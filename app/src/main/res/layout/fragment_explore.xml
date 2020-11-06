@@ -79,7 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin20"
-
+                android:textStyle="bold"
                 android:lineSpacingMultiplier="1.5"
                 android:text="Hàng mới về"
                 android:textColor="@color/colorBlack"
@@ -95,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin20"
-
+                android:textStyle="bold"
                 android:lineSpacingMultiplier="1.5"
                 android:text="Tất cả sản phẩm"
                 android:textColor="@color/colorBlack"

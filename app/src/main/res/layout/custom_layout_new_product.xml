@@ -50,10 +50,10 @@
 
             <TextView
                 android:id="@+id/txtPriceProductNew"
-                android:layout_width="106dp"
+                android:layout_width="90dp"
                 android:layout_height="match_parent"
                 android:text="Giá"
-                android:textAlignment="center"
+                android:textAlignment="textEnd"
                 android:textColor="#FF0000"
                 android:textSize="15dp"></TextView>
 
@@ -62,7 +62,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="đồng" />
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="đ" />
         </LinearLayout>
 
 

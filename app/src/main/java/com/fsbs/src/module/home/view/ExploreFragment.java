@@ -127,8 +127,6 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
         PresenterBanner presenterBanner = new PresenterBanner(this);
         products = new ArrayList<>();
         productsNew = new ArrayList<>();
-
-
         btnViewAllProduct.setOnClickListener(v -> viewAllProduct());
 
         if (products != null) {
@@ -222,7 +220,6 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
 
             txtCloseDialogSearch.setOnClickListener(v -> dialog.dismiss());
             int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.margin5);
-
             recyclerSearch.setLayoutManager(new GridLayoutManager(getActivity(), 2));
             recyclerSearch.addItemDecoration(new ItemOffsetDecoration(spacingInPixels));
             recyclerSearch.setNestedScrollingEnabled(false);
@@ -265,7 +262,7 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d("FsBs", "onDestroy: explore");
+        Log.d("FsBs", "onDestroy: Trang chủ");
     }
 
 

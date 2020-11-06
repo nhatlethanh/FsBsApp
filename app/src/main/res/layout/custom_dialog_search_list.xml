@@ -15,7 +15,7 @@
         <TextView
             android:textSize="@dimen/text_size_30"
             android:textColor="@color/colorBlack"
-            android:text="Tìm kiếm"
+            android:text="Kết quả tìm kiếm"
             android:layout_margin="@dimen/margin20"
             android:layout_weight="7"
             android:layout_width="0dp"
