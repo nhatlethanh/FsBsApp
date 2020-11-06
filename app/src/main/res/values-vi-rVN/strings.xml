@@ -5,8 +5,6 @@
     <string name="title_login">Đăng nhập vào tài khoản</string>
     <string name="password">Mật khẩu</string>
     <string name="forgot_your_password">Quên mật khẩu</string>
-    <string name="didn_t_have_an_account">Bạn chưa có tài khoản?</string>
-    <string name="sign_up">Đăng ký</string>
     <string name="create_an_account">Tạo tài khoản</string>
     <string name="username">Tên</string>
     <string name="phone">SĐT</string>
