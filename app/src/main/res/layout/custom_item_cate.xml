@@ -4,33 +4,34 @@
     android:id="@+id/layoutCateItem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/margin10"
+
     app:cardCornerRadius="@dimen/margin10">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:orientation="vertical">
+        android:layout_gravity="center">
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/imgCate"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="75dp"
             android:layout_gravity="center"
             android:src="@drawable/avt" />
 
         <TextView
             android:id="@+id/txtCate"
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="5dp"
-            android:text="My cate"
+            android:layout_marginRight="100dp"
 
-            android:textStyle="bold"
+            android:text="My cate"
             android:textColor="@color/colorBlack"
-            android:textSize="@dimen/text_size_20" />
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

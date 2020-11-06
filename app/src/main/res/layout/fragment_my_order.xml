@@ -126,7 +126,7 @@
                         android:layout_margin="@dimen/margin10"
                         android:layout_weight="7"
                         android:background="@drawable/custom_edittext_round"
-                        android:hint="@string/gift_code" />
+                        android:hint="mã giảm giá" />
 
                     <Button
                         android:id="@+id/btnCheckGift"
@@ -135,7 +135,7 @@
                         android:layout_margin="10dp"
                         android:layout_weight="3"
                         android:background="@drawable/custom_round2_button"
-                        android:text="@string/apply"
+                        android:text="Áp dụng"
 
                         android:textColor="#fff" />
                 </LinearLayout>
@@ -157,7 +157,7 @@
                     android:background="@drawable/custom_round_button"
                     android:foreground="?attr/selectableItemBackground"
                     android:padding="10dp"
-                    android:text="@string/check_out"
+                    android:text="Check out"
 
                     android:textColor="#fff" />
                 <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar

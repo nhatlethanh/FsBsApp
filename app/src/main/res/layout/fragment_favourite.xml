@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_icon_cart"
-            android:contentDescription="@string/todo"
+            android:contentDescription="Yêu thích"
             android:padding="@dimen/margin50"
             android:src="@drawable/ic_heart_checked" />
 
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
 
             android:gravity="center"
-            android:text="@string/favourite_empty"
+            android:text="Trống"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/text_size_30" />
 
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin20"
 
-            android:text="@string/favourite"
+            android:text="Yêu thích"
             android:textColor="@color/colorOrange"
             android:textSize="@dimen/text_size_50" />
 

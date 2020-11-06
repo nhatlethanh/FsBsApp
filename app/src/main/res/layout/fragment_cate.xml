@@ -10,10 +10,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin20"
-        android:text="Danh mục"
+        android:layout_margin="20dp"
+
+        android:text="DANH MỤC"
         android:textColor="@color/colorPink"
-        android:textSize="@dimen/text_size_50" />
+        android:textSize="30dp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerCate"
         android:layout_margin="20dp"

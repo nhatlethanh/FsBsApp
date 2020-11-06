@@ -212,7 +212,7 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
         DialogLoading.LoadingGoogle(false, progressBarExplore);
         if (productList != null && productList.size() > 0) {
             edtSearch.setText("");
-            Dialog dialog = new Dialog(Objects.requireNonNull(getActivity()), android.R.style.Theme_Black_NoTitleBar_Fullscreen);
+            Dialog dialog = new Dialog(Objects.requireNonNull(getActivity()), android.R.style.Theme_DeviceDefault_Light_NoActionBar_Fullscreen);
             dialog.setContentView(R.layout.custom_dialog_search_list);
             RecyclerView recyclerSearch = dialog.findViewById(R.id.recyclerSearch);
             TextView txtCloseDialogSearch = dialog.findViewById(R.id.txtCloseDialogSearch);
@@ -228,7 +228,7 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
             dialog.show();
 
         } else {
-            Toasty.info(getActivity(), "Không tìm thấy sản phẩm", Toasty.LENGTH_LONG).show();
+            Toasty.info(getActivity(), "Sản phẩm không tồn tại", Toasty.LENGTH_LONG).show();
         }
     }
 
