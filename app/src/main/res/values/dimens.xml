@@ -2,6 +2,7 @@
 <resources>
     <dimen name="margin150">100dp</dimen>
     <dimen name="margin10">10dp</dimen>
+    <dimen name="margin0">0dp</dimen>
     <dimen name="margin5">5dp</dimen>
     <dimen name="margin20">20dp</dimen>
     <dimen name="margin30">30dp</dimen>
@@ -12,4 +13,5 @@
     <dimen name="text_size_20">20sp</dimen>
     <dimen name="size5dp">5dp</dimen>
     <dimen name="text_size_15">15sp</dimen>
+
 </resources>

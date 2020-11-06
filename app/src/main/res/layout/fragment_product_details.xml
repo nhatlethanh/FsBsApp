@@ -30,17 +30,19 @@
 
             <ImageView
                 android:id="@+id/imgBackProductDetails"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="@dimen/margin10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shadow"
+                android:layout_margin="10dp"
                 android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
 
             <ImageView
                 android:id="@+id/imgFavouriteProductDetails"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shadow"
                 android:layout_gravity="right"
-                android:layout_margin="@dimen/margin10"
+                android:layout_margin="10dp"
                />
 
 
@@ -50,12 +52,14 @@
             android:id="@+id/bodyProductDetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:background="@drawable/shawdow"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/shadow"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txtNameProductDetails"
+                android:background="@drawable/shadow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -74,43 +78,46 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="305dp"
+                    android:layout_width="290dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="185dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin10"
+                        android:layout_margin="10dp"
                         android:ellipsize="end"
                         android:text="Mô tả"
+
                         android:textColor="@color/colorBlack"
-                        android:textSize="@dimen/text_size_20" />
+                        android:textSize="17dp" />
 
                     <TextView
                         android:id="@+id/txtDescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin10"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
                         android:ellipsize="end"
                         android:maxLines="3"
                         android:text="Mô tả"
-                        android:textSize="@dimen/text_size_15" />
+                        android:textSize="15dp" />
 
                 </LinearLayout>
 
                 <Button
                     android:id="@+id/btnOrderNowDetails"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:background="@drawable/add_to_cart"
                     android:gravity="center"
 
-
+                    android:layout_margin="10dp"
                     android:textAllCaps="false"
                     android:textColor="@color/colorWhite"
-                    android:textSize="15dp" />
+                    />
 
             </LinearLayout>
 
@@ -119,19 +126,22 @@
 
         <TextView
             android:id="@+id/txtWriteComment"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorBlack"
-            android:textStyle="bold"
+            android:textColor="@color/colorPink"
             android:gravity="center"
-            android:text="Viết đánh giá"
-            android:textSize="@dimen/text_size_20" />
+            android:layout_gravity="center"
+            android:text="Đánh giá"
+            android:padding="10dp"
+            android:background="@drawable/shadow_pink"
+            android:textSize="20dp" />
 
         <LinearLayout
             android:id="@+id/layoutWriteComment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+
             android:visibility="gone">
 
             <androidx.appcompat.widget.AppCompatRatingBar
@@ -177,9 +187,10 @@
             android:layout_gravity="center"
             gpb:type="nexus_rotation_cross"/>
         <androidx.recyclerview.widget.RecyclerView
-
+            android:background="@drawable/shadow"
             android:layout_marginBottom="@dimen/margin30"
             android:id="@+id/recyclerReview"
+            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
