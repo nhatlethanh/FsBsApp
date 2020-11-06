@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content"
-            tools:context="com.fsbs.src.module.register.view.RegisterActivity">
+            tools:context="com.src.Module.Register.view.RegisterActivity">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarRegister"

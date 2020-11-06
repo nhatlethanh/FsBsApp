@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.fsbs.src.module.favourite.view.FavouriteFragment">
+    tools:context="com.src.Module.Favourite.view.FavouriteFragment">
 
     <LinearLayout
         android:id="@+id/layoutFavouriteEmpty"

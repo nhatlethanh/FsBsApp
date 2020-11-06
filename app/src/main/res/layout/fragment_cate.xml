@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="com.fsbs.src.module.cate.view.CateFragment">
+    tools:context="com.src.Module.Category.view.CateFragment">
 
 
     <TextView

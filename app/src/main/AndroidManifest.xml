@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.fsbs">
+    package="com">
     <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,29 +16,29 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.fsbs.src.module.home.view.AllProductActivity"/>
-        <activity android:name="com.fsbs.src.module.cate.view.ProductForCateActivity" />
-        <activity android:name="com.fsbs.NavigationActivity" />
+        <activity android:name="com.src.Module.Home.view.AllProductActivity"/>
+        <activity android:name="com.src.Module.Category.view.ProductForCateActivity" />
+        <activity android:name="com.src.NavigationActivity" />
         <activity
-            android:name="com.fsbs.src.module.register.view.RegisterActivity"
+            android:name="com.src.Module.Register.view.RegisterActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.fsbs.src.module.home.view.ProductDetailsActivity"
+            android:name="com.src.Module.Home.view.ProductDetailsActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.fsbs.src.module.order.view.MyOrderActivity"
+            android:name="com.src.Module.Order.view.MyOrderActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.fsbs.src.module.login.view.LoginActivity"
+            android:name="com.src.Module.Login.view.LoginActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name="com.fsbs.src.utils.SplashScreenActivity">
+        <activity android:name="com.src.Utils.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.fsbs.MainActivity"/>
+        <activity android:name="com.src.MainActivity"/>
 
 
     </application>

@@ -8,7 +8,7 @@
     android:layout_gravity="center"
     android:layout_marginTop="@dimen/margin30"
     android:orientation="vertical"
-    tools:context="com.fsbs.src.module.profile.view.ProfileFragment">
+    tools:context="com.src.Module.Personal.view.ProfileFragment">
 
     <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
         android:id="@+id/progressBarProfile"
@@ -38,6 +38,7 @@
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
+
                 android:id="@+id/imageProfile"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
