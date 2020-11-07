@@ -15,13 +15,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-
+            android:fontFamily="@font/alfa_slab_one"
             android:layout_marginTop="100dp"
             android:gravity="center"
             android:lineSpacingMultiplier="1.0"
             android:text="H E I N"
             android:textColor="@color/colorPink"
-            android:textSize="100dp"
+            android:textSize="80dp"
             android:textStyle="bold" />
 
         <Button
