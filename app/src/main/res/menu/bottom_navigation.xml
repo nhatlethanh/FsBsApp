@@ -3,17 +3,21 @@
     <item
         android:id="@+id/navigation_explore"
         android:icon="@drawable/home"
-        android:title="Trang chủ" />
+        android:title="Trang chủ"
+        android:iconTint="@color/colorPink"/>
     <item
         android:id="@+id/navigation_my_order"
         android:icon="@drawable/cate"
-        android:title="Danh mục" />
+        android:title="Danh mục"
+        android:iconTint="@color/colorPink"/>
     <item
         android:id="@+id/navigation_favourite"
         android:icon="@drawable/ic_heart"
-        android:title="Yêu thích" />
+        android:title="Yêu thích"
+        android:iconTint="@color/colorPink"/>
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_profile"
-        android:title="Tài khoản" />
+        android:title="Tài khoản"
+        android:iconTint="@color/colorPink"/>
 </menu>
