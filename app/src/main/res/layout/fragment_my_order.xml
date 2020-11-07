@@ -30,12 +30,12 @@
             android:layout_height="wrap_content"
             android:background="@drawable/round_icon_cart"
             android:padding="@dimen/margin50"
-            android:src="@drawable/ic_cart" />
+            android:src="@drawable/add_to_cart" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:textStyle="bold"
             android:gravity="center"
             android:text="Giỏ hàng trống!"
             android:textColor="@color/colorBlack"

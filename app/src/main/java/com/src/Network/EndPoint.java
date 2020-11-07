@@ -1,8 +1,8 @@
 package com.src.Network;
 
 public class EndPoint {
-    static String BASE_URL = "http:/172.16.26.94:4000/api/";
-   public static String BASE_URL_PUBLIC = "http://172.16.26.94:4000/public/photo/";
+    static String BASE_URL = "http:/192.168.1.224:4000/api/";
+   public static String BASE_URL_PUBLIC = "http://192.168.1.224:4000/public/photo/";
 
     //**** User ****//
     static

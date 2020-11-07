@@ -30,11 +30,10 @@
 
             <ImageView
                 android:id="@+id/imgBackProductDetails"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/shadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+                android:src="@drawable/ic_keyboard_backspace_24dp" />
 
             <ImageView
                 android:id="@+id/imgFavouriteProductDetails"
@@ -131,9 +130,8 @@
             android:textColor="@color/colorPink"
             android:gravity="center"
             android:layout_gravity="center"
-            android:text="Đánh giá"
+            android:text="Đánh giá khách hàng"
             android:padding="10dp"
-            android:background="@drawable/shadow_pink"
             android:textSize="20dp" />
 
         <LinearLayout
