@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:layout_gravity="center"
-    android:layout_marginTop="@dimen/margin30"
+    android:layout_marginTop="30dp"
     android:orientation="vertical"
     tools:context="com.src.Module.Personal.view.ProfileFragment">
 
@@ -34,7 +34,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="141dp"
-            android:layout_margin="@dimen/margin20"
+            android:layout_margin="20dp"
 
             >
 
@@ -48,7 +48,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/margin20"
+                android:layout_marginStart="20dp"
                 android:orientation="vertical">
 
                 <TextView

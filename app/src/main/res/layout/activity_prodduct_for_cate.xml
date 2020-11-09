@@ -12,18 +12,18 @@
         android:id="@+id/txtCateName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin20"
+        android:layout_margin="20dp"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:text="Danh mục"
         android:textColor="@color/colorPink"
-        android:textSize="@dimen/text_size_30" />
+        android:textSize="30dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewProductCate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin10" />
+        android:layout_margin="10dp" />
 
     <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
         android:id="@+id/progress_productForCate"

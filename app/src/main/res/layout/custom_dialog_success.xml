@@ -13,14 +13,14 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin50"
+            android:layout_marginTop="50dp"
             android:src="@drawable/ic_check" />
 
         <TextView
         android:gravity="center"
 
         android:textColor="@color/colorBlack"
-        android:textSize="@dimen/text_size_30"
+        android:textSize="30dp"
         android:text="Đặt đơn hàng thành công!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -31,7 +31,7 @@
             android:textColor="@color/colorWhite"
             android:text="OK"
             android:textSize="@dimen/text_size_20"
-            android:layout_margin="@dimen/margin30"
+            android:layout_margin="30dp"
             android:background="@drawable/custom_round_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

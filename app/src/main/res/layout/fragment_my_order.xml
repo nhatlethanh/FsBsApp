@@ -29,17 +29,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_icon_cart"
-            android:padding="@dimen/margin50"
+            android:padding="50dp"
             android:src="@drawable/add_to_cart" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
             android:gravity="center"
             android:text="Giỏ hàng trống!"
             android:textColor="@color/colorBlack"
-            android:textSize="@dimen/text_size_30" />
+            android:textSize="20sp" />
 
 
     </LinearLayout>
@@ -75,7 +74,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="3dp" />
+                    android:layout_height="5dp" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerProductCart"
@@ -85,7 +84,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
-                    android:background="@color/colorBlackTransparent" />
+                    android:background="@color/colorBlack" />
 
                 <TextView
                     android:id="@+id/txtTotalAmountCart"
@@ -93,8 +92,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textSize="15sp"
+                   />
 
                 <TextView
                     android:id="@+id/txtTotalPriceCart"
@@ -103,7 +102,7 @@
                     android:layout_weight="1"
                     android:gravity="right"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    />
 
                 <TextView
                     android:id="@+id/txtAddressOrderDetails"
@@ -123,10 +122,10 @@
                         android:id="@+id/edtGift"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin10"
+                        android:layout_margin="10dp"
                         android:layout_weight="7"
                         android:background="@drawable/custom_edittext_round"
-                        android:hint="mã giảm giá" />
+                        android:hint="Gift code" />
 
                     <Button
                         android:id="@+id/btnCheckGift"
@@ -134,8 +133,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="3"
-                        android:background="@drawable/custom_round2_button"
-                        android:text="Áp dụng"
+                        android:background="@color/colorBlack"
+                        android:text="ÁP DỤNG"
 
                         android:textColor="#fff" />
                 </LinearLayout>
@@ -145,7 +144,7 @@
                     android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin10"
+                    android:layout_margin="10dp"
                     android:textSize="@dimen/text_size_15" />
 
                 <Button
@@ -154,10 +153,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_marginTop="30dp"
-                    android:background="@drawable/custom_round_button"
+                    android:background="@color/colorBlack"
                     android:foreground="?attr/selectableItemBackground"
                     android:padding="10dp"
-                    android:text="Check out"
+                    android:text="ĐẶT HÀNG"
 
                     android:textColor="#fff" />
                 <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar

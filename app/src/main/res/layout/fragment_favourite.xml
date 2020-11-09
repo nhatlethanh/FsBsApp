@@ -18,21 +18,22 @@
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round_icon_cart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_love"
+            android:layout_gravity="center"
             android:contentDescription="Yêu thích"
-            android:padding="@dimen/margin50"
-            android:src="@drawable/ic_heart_checked" />
+            android:padding="50dp"
+                />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:gravity="center"
-            android:text="Trống"
+            android:text="Chưa có sản phẩm yêu thích"
             android:textColor="@color/colorBlack"
-            android:textSize="@dimen/text_size_30" />
+            android:textSize="20dp" />
 
 
     </LinearLayout>
@@ -47,19 +48,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin20"
-
-            android:text="Yêu thích"
-            android:textColor="@color/colorOrange"
-            android:textSize="@dimen/text_size_50" />
-
+            android:layout_margin="20dp"
+            android:text="SẢN PHẨM YÊU THÍCH"
+            android:textColor="@color/colorPink"
+            android:textSize="30dp" />
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewFavourite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin10"
-            android:layout_marginRight="@dimen/margin10"
-            android:layout_marginBottom="@dimen/margin50"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
 
 
             />
@@ -72,7 +71,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:background="@drawable/round_icon_cart"
+        android:background="@drawable/ic_love"
         android:gravity="center"
         android:visibility="visible"
         gpb:type="nexus_rotation_cross" />

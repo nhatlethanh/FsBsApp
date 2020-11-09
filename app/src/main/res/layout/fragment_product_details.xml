@@ -17,12 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.chabbal.slidingdotsplash.SlidingSplashView
+            <com.chabbal.sliding.SlidingSplashView
                 android:id="@+id/introProductDetail"
                 android:layout_width="match_parent"
                 android:layout_height="250dp">
 
-            </com.chabbal.slidingdotsplash.SlidingSplashView>
+            </com.chabbal.sliding.SlidingSplashView>
 
             <View
                 android:layout_width="match_parent"
@@ -58,7 +58,7 @@
 
             <TextView
                 android:id="@+id/txtNameProductDetails"
-                android:background="@drawable/shadow"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -127,11 +127,11 @@
             android:id="@+id/txtWriteComment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPink"
-            android:gravity="center"
             android:layout_gravity="center"
-            android:text="Đánh giá khách hàng"
+            android:gravity="center"
             android:padding="10dp"
+            android:text="Đánh giá sản phẩm"
+            android:textColor="@color/colorBlack"
             android:textSize="20dp" />
 
         <LinearLayout
@@ -147,17 +147,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="@dimen/margin30"
-                android:layout_marginRight="@dimen/margin30"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:numStars="5" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtComment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin30"
-                android:layout_marginTop="@dimen/margin10"
-                android:layout_marginRight="@dimen/margin30"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/custom_edittext_round"
                 android:hint="Đánh giá của bạn" />
 
@@ -167,7 +167,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
-                android:background="@color/colorPink"
+                android:background="@color/colorBlack"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:text="Đánh giá"
@@ -185,8 +185,8 @@
             android:layout_gravity="center"
             gpb:type="nexus_rotation_cross"/>
         <androidx.recyclerview.widget.RecyclerView
-            android:background="@drawable/shadow"
-            android:layout_marginBottom="@dimen/margin30"
+
+            android:layout_marginBottom="30dp"
             android:id="@+id/recyclerReview"
             android:layout_margin="10dp"
             android:layout_width="match_parent"

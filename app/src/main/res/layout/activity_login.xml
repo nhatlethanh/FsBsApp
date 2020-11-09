@@ -27,18 +27,18 @@
             android:id="@+id/edtEmailLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin30"
-            android:layout_marginTop="@dimen/margin30"
-            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
             android:hint="Email" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtPasswordLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginRight="30dp"
             android:hint="Mật khẩu"
             android:inputType="textPassword"/>
 
@@ -46,7 +46,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin30"
+            android:layout_margin="30dp"
             android:background="@color/colorPink"
             android:text="Đăng nhập"
             android:textAllCaps="false"
@@ -58,7 +58,7 @@
             android:id="@+id/signUpNew"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginTop="10dp"
             android:gravity="center">
 
             <TextView

@@ -3,7 +3,6 @@
     <color name="colorPrimary">#000</color>
     <color name="colorPrimaryDark">#00FF8C00</color>
     <color name="colorAccent">#FF8C00</color>
-    ****/// App ///***
     <color name="colorBlack">#D2000000</color>
     <color name="colorBlackTransparent">#00000000</color>
     <color name="colorWhite">#fff</color>
@@ -11,5 +10,6 @@
     <color name="colorActive">#CD3EC944</color>
     <color name="colorStroke">#979797</color>
     <color name="colorStrokeTransparent">#75E6E5E5</color>
+    <color name="colorRed">	#FF0000</color>
     <color name="colorPink">	#FF1493</color>
 </resources>

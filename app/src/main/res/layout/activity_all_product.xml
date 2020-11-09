@@ -16,19 +16,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin20"
+            android:layout_margin="20dp"
             android:textStyle="bold"
             android:fontFamily="@font/alfa_slab_one"
             android:text="Tất cả sản phẩm"
             android:textColor="@color/colorPink"
             android:layout_gravity="center"
-            android:textSize="@dimen/text_size_30" />
+            android:textSize="30dp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewAllProductPaging"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin10" />
+            android:layout_margin="10dp" />
 
 
 
@@ -39,7 +39,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="@dimen/margin150"
         android:background="@drawable/round_icon_cart"
         android:gravity="center"
