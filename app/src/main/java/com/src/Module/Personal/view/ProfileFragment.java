@@ -27,6 +27,7 @@ import java.util.Objects;
 import es.dmoral.toasty.Toasty;
 
 import com.src.Model.User;
+import com.src.Module.Login.view.LoginActivity;
 import com.src.Module.Personal.presenter.PresenterProfile;
 import com.src.Utils.DialogLoading;
 import com.src.Utils.SplashScreenActivity;
@@ -51,7 +52,6 @@ public class ProfileFragment extends Fragment implements IViewProfile, View.OnCl
         initView(v);
         DialogLoading.LoadingGoogle(true, progressBarProfile);
         presenterProfile.getProfile();
-
         return v;
     }
 
@@ -62,6 +62,7 @@ public class ProfileFragment extends Fragment implements IViewProfile, View.OnCl
         txtAddress = v.findViewById(R.id.txtAddress);
         progressBarProfile = v.findViewById(R.id.progressBarProfile);
         imgProfile = v.findViewById(R.id.imageProfile);
+        layoutLogout = v.findViewById(R.id.layoutLogout);
         layoutChangePassword = v.findViewById(R.id.layoutChangePassword);
         layoutChangePassword.setOnClickListener(this);
     }
@@ -97,6 +98,10 @@ public class ProfileFragment extends Fragment implements IViewProfile, View.OnCl
         }, 3000);
     }
 
+    private void handlerLogout() {
+            startActivity(new Intent(getActivity(), LoginActivity.class));
+            getActivity().finish();
+    }
     @Override
     public void onChangePasswordFail(String msg) {
         DialogLoading.LoadingGoogle(false, progressBarProfile);
