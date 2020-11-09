@@ -17,18 +17,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df57991d-b4de-4748-af8a-7208ab6910d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/akronim.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/alfa_slab_one.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/helvetica.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/helvetica_bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/hlv.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_5X_API_29]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -393,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604740113636</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add font">
+      <created>1604740163823</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1604740163823</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -440,7 +443,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Ducky commit" />
     <MESSAGE value="Ducky-font-textstyle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ducky-font-textstyle" />
+    <MESSAGE value="add font" />
+    <option name="LAST_COMMIT_MESSAGE" value="add font" />
   </component>
   <component name="WindowStateProjectService">
     <state x="544" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604731418725">
@@ -456,17 +460,17 @@
     </state>
     <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1604544749644" />
     <state x="436" y="211" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604737866780" />
-    <state x="534" y="90" key="CommitChangelistDialog2" timestamp="1604740113036">
+    <state x="534" y="90" key="CommitChangelistDialog2" timestamp="1604740163287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="534" y="90" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604740113036" />
+    <state x="534" y="90" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604740163287" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604737115559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604737115559" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604731534758">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604740184420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604731534758" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604740184420" />
   </component>
 </project>
