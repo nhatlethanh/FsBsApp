@@ -16,7 +16,7 @@ import com.src.Network.IApiFsBs;
 
 public class ModelBanner {
     public void getBanner(PresenterBanner presenterBanner){
-        IApiFsBs apiService = APIFsBs.getAPIVnProduct().create(IApiFsBs.class);
+        IApiFsBs apiService = APIFsBs.getAPIProduct().create(IApiFsBs.class);
         apiService.getBanner().enqueue(new Callback<BaseResponse<List<Images>>>() {
             @Override
             public void onResponse(Call<BaseResponse<List<Images>>> call, Response<BaseResponse<List<Images>>> response) {

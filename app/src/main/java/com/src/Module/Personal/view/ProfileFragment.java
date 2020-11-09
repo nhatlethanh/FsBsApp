@@ -36,7 +36,7 @@ import static android.content.Context.MODE_PRIVATE;
 public class ProfileFragment extends Fragment implements IViewProfile, View.OnClickListener {
 
     private PresenterProfile presenterProfile;
-    private TextView txtNameProfile;
+    private TextView txtNameProfile,txtPhoneProfile,txtAddress;
     private GoogleProgressBar progressBarProfile;
     private ImageView imgProfile;
     private LinearLayout layoutChangePassword,layoutLogout;
@@ -58,6 +58,8 @@ public class ProfileFragment extends Fragment implements IViewProfile, View.OnCl
     private void initView(View v) {
         presenterProfile = new PresenterProfile(this);
         txtNameProfile = v.findViewById(R.id.txtNameProfile);
+        txtPhoneProfile = v.findViewById(R.id.txtPhoneProfile);
+        txtAddress = v.findViewById(R.id.txtAddress);
         progressBarProfile = v.findViewById(R.id.progressBarProfile);
         imgProfile = v.findViewById(R.id.imageProfile);
         layoutChangePassword = v.findViewById(R.id.layoutChangePassword);
@@ -68,6 +70,8 @@ public class ProfileFragment extends Fragment implements IViewProfile, View.OnCl
         if (user != null) {
             DialogLoading.LoadingGoogle(false, progressBarProfile);
             txtNameProfile.setText(user.getUsername());
+            txtPhoneProfile.setText(user.getPhone());
+            txtAddress.setText(user.getAddress());
         }
     }
 

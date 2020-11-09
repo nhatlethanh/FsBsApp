@@ -11,7 +11,7 @@ import com.src.Model.StoreKey;
 public class APIFsBs {
     private static Retrofit retrofit = null;
 
-    public static Retrofit getAPIVnProduct() {
+    public static Retrofit getAPIProduct() {
         if (retrofit == null) {
 
             OkHttpClient client = new OkHttpClient.Builder().addInterceptor(chain -> {

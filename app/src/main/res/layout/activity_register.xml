@@ -26,9 +26,9 @@
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarRegister"
-                app:navigationIcon="@drawable/ic_keyboard_backspace_24dp"
                 android:layout_width="match_parent"
-                android:layout_height="?actionBarSize"/>
+                android:layout_height="41dp"
+                app:navigationIcon="@drawable/ic_keyboard_backspace_24dp" />
 
             <TextView
                 android:fontFamily="@font/alfa_slab_one"
@@ -76,6 +76,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPasswordRegister2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginTop="@dimen/margin30"
+                android:layout_marginRight="@dimen/margin30"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginTop="@dimen/margin30"
+                android:layout_marginRight="@dimen/margin30"
+                android:hint="Địa chỉ"
+                />
 
             <Button
                 android:id="@+id/btnRegister"

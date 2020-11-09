@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin20"
         android:textStyle="bold"
+        android:layout_gravity="center"
         android:text="Danh mục"
         android:textColor="@color/colorPink"
         android:textSize="@dimen/text_size_30" />

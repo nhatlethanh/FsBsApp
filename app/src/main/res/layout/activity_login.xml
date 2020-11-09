@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:fontFamily="@font/alfa_slab_one"
+            android:fontFamily="@font/brandon_bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -50,6 +50,7 @@
             android:background="@color/colorPink"
             android:text="Đăng nhập"
             android:textAllCaps="false"
+
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/text_size_20" />
 

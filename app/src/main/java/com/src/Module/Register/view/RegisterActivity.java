@@ -21,7 +21,7 @@ import com.src.Utils.DialogLoading;
 public class RegisterActivity extends AppCompatActivity implements IViewRegister {
 
     private TextInputEditText edtEmailRegister, edtUserNameRegister, edtPhoneRegister,
-            edtPasswordRegister;
+            edtPasswordRegister,edtAddress;
     private Button btnRegister;
     private PresenterRegister presenterRegister;
     private GoogleProgressBar progress_register;
@@ -45,6 +45,7 @@ public class RegisterActivity extends AppCompatActivity implements IViewRegister
             user.setUsername(edtUserNameRegister.getText().toString().trim());
             user.setPassword(edtPasswordRegister.getText().toString().trim());
             user.setPhone(edtPhoneRegister.getText().toString().trim());
+            user.setAddress(edtAddress.getText().toString().trim());
             presenterRegister.handlerRegister(user);
         }
 
@@ -58,6 +59,7 @@ public class RegisterActivity extends AppCompatActivity implements IViewRegister
         edtPasswordRegister = findViewById(R.id.edtPasswordRegister);
         edtPhoneRegister = findViewById(R.id.edtPhoneRegister);
         edtUserNameRegister = findViewById(R.id.edtUserNameRegister);
+        edtAddress = findViewById(R.id.edtAddress);
         btnRegister = findViewById(R.id.btnRegister);
         presenterRegister = new PresenterRegister(this);
     }
@@ -88,6 +90,7 @@ public class RegisterActivity extends AppCompatActivity implements IViewRegister
         String password = edtPasswordRegister.getText().toString().trim();
         String phone = edtPhoneRegister.getText().toString().trim();
         String username = edtUserNameRegister.getText().toString().trim();
+        String address = edtAddress.getText().toString().trim();
         if (email.length() == 0) {
             edtEmailRegister.setError("Email Invalid");
             edtEmailRegister.requestFocus();

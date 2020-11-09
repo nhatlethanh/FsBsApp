@@ -33,16 +33,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="141dp"
             android:layout_margin="@dimen/margin20"
-            android:orientation="horizontal">
+
+            >
 
             <de.hdodenhof.circleimageview.CircleImageView
-
                 android:id="@+id/imageProfile"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_baseline_person_24" />
+                android:layout_width="123dp"
+                android:layout_height="121dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_profile" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,13 +52,15 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:fontFamily="@font/alfa_slab_one"
                     android:id="@+id/txtNameProfile"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+
                     android:gravity="center"
                     android:textColor="@color/colorBlack"
-                    android:textSize="@dimen/text_size_40"
+                    android:textSize="25dp"
                     tools:text="Tên người dùng" />
 
             </LinearLayout>
@@ -68,38 +71,32 @@
             android:id="@+id/layoutChangePassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin20"
+            android:layout_margin="10dp"
             android:orientation="horizontal"
+
             android:weightSum="10">
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="35dp"
                 android:layout_weight="2"
-                android:src="@drawable/ic_settings_black_24dp" />
+                android:src="@drawable/ic_changepass" />
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
                 android:text="Đổi mật khẩu"
-                android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="2"
-                android:gravity="right"
-                android:src="@drawable/ic_chevron_right_24dp" />
+                android:textColor="@color/colorBlack"
+                android:textSize="30dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin20"
+            android:layout_margin="10dp"
             android:orientation="horizontal"
             android:weightSum="10">
 
@@ -107,31 +104,24 @@
                 android:layout_width="0dp"
                 android:layout_height="35dp"
                 android:layout_weight="2"
-                android:src="@drawable/ic_baseline_phone_24" />
+                android:src="@drawable/ic_phone" />
 
             <TextView
+                android:id="@+id/txtPhoneProfile"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="6"
-
+                android:layout_height="match_parent"
+                android:layout_weight="8"
                 android:text="Số điện thoại"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"/>
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="2"
-                android:gravity="right"
-                android:src="@drawable/ic_chevron_right_24dp" />
+                android:textSize="30dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin20"
+            android:layout_margin="10dp"
+
             android:orientation="horizontal"
             android:weightSum="10">
 
@@ -139,55 +129,16 @@
                 android:layout_width="0dp"
                 android:layout_height="35dp"
                 android:layout_weight="2"
-                android:src="@drawable/ic_heart" />
+                android:src="@drawable/ic_address" />
 
             <TextView
+                android:id="@+id/txtAddress"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="6"
-
-                android:text="Đã yêu thích"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:text="Địa chỉ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="2"
-                android:gravity="right"
-                android:src="@drawable/ic_chevron_right_24dp" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin20"
-            android:orientation="horizontal"
-            android:weightSum="10">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="35dp"
-                android:layout_weight="2"
-                android:src="@drawable/ic_baseline_shopping_cart_24" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="6"
-
-                android:text="Đơn hàng"
-                android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="2"
-                android:gravity="right"
-                android:src="@drawable/ic_chevron_right_24dp" />
+                android:textSize="30dp" />
 
         </LinearLayout>
 
@@ -195,7 +146,8 @@
             android:id="@+id/layoutLogout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin20"
+            android:layout_margin="10dp"
+
             android:orientation="horizontal"
             android:weightSum="10">
 
@@ -204,16 +156,16 @@
                 android:layout_width="0dp"
                 android:layout_height="35dp"
                 android:layout_weight="2"
-                android:src="@drawable/ic_baseline_exit_to_app_24" />
+                android:src="@drawable/ic_logout" />
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/logout"
-                android:layout_height="wrap_content"
-                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
                 android:text="Đăng xuất"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
+                android:textSize="30dp" />
 
 
         </LinearLayout>

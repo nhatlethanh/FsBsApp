@@ -17,7 +17,7 @@ import com.src.Network.IApiFsBs;
 import com.src.Utils.ErrorUtils;
 
 public class ModelCate {
-    IApiFsBs apiService = APIFsBs.getAPIVnProduct().create(IApiFsBs.class);
+    IApiFsBs apiService = APIFsBs.getAPIProduct().create(IApiFsBs.class);
 
     public void getListCate(PresenterCate presenterCate){
 

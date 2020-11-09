@@ -18,7 +18,7 @@ import com.src.Utils.ErrorUtils;
 public class ModelLogin {
     public void loginUser(String email, String password, final PresenterLogin presenterLogin) {
         Log.d("FsBs", "Tài khoản đăng nhập: " + email);
-        IApiFsBs apiService = APIFsBs.getAPIVnProduct().create(IApiFsBs.class);
+        IApiFsBs apiService = APIFsBs.getAPIProduct().create(IApiFsBs.class);
         Call<BaseResponse<User>> call = apiService.handlerLogin(email, password);
         call.enqueue(new Callback<BaseResponse<User>>() {
             @Override

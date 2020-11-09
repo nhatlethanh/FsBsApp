@@ -17,7 +17,7 @@ import com.src.Network.IApiFsBs;
 import com.src.Utils.ErrorUtils;
 
 public class ModelProfile {
-    private IApiFsBs apiService = APIFsBs.getAPIVnProduct().create(IApiFsBs.class);
+    private IApiFsBs apiService = APIFsBs.getAPIProduct().create(IApiFsBs.class);
 
     public void profile(PresenterProfile presenterProfile) {
         Call<BaseResponse<User>> callProfile = apiService.getProfile();

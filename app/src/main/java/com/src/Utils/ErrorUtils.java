@@ -12,7 +12,7 @@ import com.src.Network.APIFsBs;
 
 public class ErrorUtils {
     public static ErrorResponse parseError(Response<?> response){
-        Converter<ResponseBody, ErrorResponse> converter = APIFsBs.getAPIVnProduct()
+        Converter<ResponseBody, ErrorResponse> converter = APIFsBs.getAPIProduct()
                 .responseBodyConverter(ErrorResponse.class,new Annotation[0]);
         ErrorResponse errorResponse;
         try {

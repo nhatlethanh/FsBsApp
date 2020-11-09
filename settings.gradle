@@ -1,2 +1,2 @@
-include ':app', ':slidingdotsplash'
+include ':app', ':sliding'
 rootProject.name='FsBsApp'

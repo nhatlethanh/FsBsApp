@@ -19,7 +19,7 @@ import com.src.Network.IApiFsBs;
 import com.src.Utils.ErrorUtils;
 
 public class ModelProduct {
-    IApiFsBs apiService = APIFsBs.getAPIVnProduct().create(IApiFsBs.class);
+    IApiFsBs apiService = APIFsBs.getAPIProduct().create(IApiFsBs.class);
 
     public void listProduct(PresenterProduct presenterProduct) {
         Call<BaseResponse<List<Product>>> callProduct = apiService.getListProduct();
