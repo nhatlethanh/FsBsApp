@@ -12,16 +12,15 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import java.util.ArrayList;
-
 import com.src.Model.OrderProvisional;
 import com.src.Module.Category.view.CateFragment;
-import com.src.Module.Home.view.ExploreFragment;
 import com.src.Module.Favourite.view.FavouriteFragment;
+import com.src.Module.Home.view.ExploreFragment;
 import com.src.Module.Order.view.MyOrderActivity;
-import com.src.Module.Personal.view.ProfileFragment;
+import com.src.Module.User.view.ProfileFragment;
 import com.src.Utils.ViewPagerNavigationAdapter;
+
+import java.util.ArrayList;
 
 
 public class NavigationActivity extends AppCompatActivity {
