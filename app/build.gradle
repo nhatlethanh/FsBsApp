@@ -53,5 +53,7 @@ dependencies {
     implementation 'com.nex3z:notification-badge:1.0.2'
     implementation 'org.greenrobot:eventbus:3.2.0'
 
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
     annotationProcessor 'com.mindorks.android:placeholderview-compiler:1.0.3'
 }
