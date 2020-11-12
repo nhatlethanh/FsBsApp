@@ -55,7 +55,7 @@ public class NavigationActivity extends AppCompatActivity {
                 case R.id.navigation_explore:
                     viewPager.setCurrentItem(0);
                     break;
-                case R.id.navigation_my_order:
+                case R.id.navigation_cate:
                     viewPager.setCurrentItem(1);
                     break;
                 case R.id.navigation_favourite:
@@ -67,34 +67,7 @@ public class NavigationActivity extends AppCompatActivity {
             }
             return true;
         });
-//======================Đừng xóa nha=====================================
-//        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-//            @Override
-//            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 //
-//            }
-//
-//            @Override
-//            public void onPageSelected(int position) {
-//                Log.d("FsBs", "onPageSelected: " + position);
-//                if (prevMenuItem != null) {
-//                    prevMenuItem.setChecked(false);
-//                } else {
-//                    navigation.getMenu().getItem(0).setChecked(false);
-//                }
-//
-//                navigation.getMenu().getItem(position).setChecked(true);
-//                prevMenuItem = navigation.getMenu().getItem(position);
-//
-//            }
-//
-//            @Override
-//            public void onPageScrollStateChanged(int state) {
-//
-//            }
-//
-//        });
-//        ==========================================
         setupViewPager(viewPager);
     }
 
@@ -102,6 +75,38 @@ public class NavigationActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerNavigationAdapter adapter = new ViewPagerNavigationAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                Log.d("FsBs", "onPageSelected: " + position);
+                switch (position){
+                    case 0:
+                        navigation.getMenu().findItem(R.id.navigation_explore).setChecked(true);
+                        break;
+                    case 1:
+                        navigation.getMenu().findItem(R.id.navigation_cate).setChecked(true);
+                        break;
+                    case 2:
+                        navigation.getMenu().findItem(R.id.navigation_favourite).setChecked(true);
+                        break;
+                    case 3:
+                        navigation.getMenu().findItem(R.id.navigation_profile).setChecked(true);
+                        break;
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+
+        });
 //        =========================CODE CŨ dự phòng đừng xóa
 //        ExploreFragment exploreFragment = new ExploreFragment();
 //        FavouriteFragment favouriteFragment = new FavouriteFragment();

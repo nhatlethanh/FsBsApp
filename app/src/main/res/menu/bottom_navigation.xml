@@ -6,7 +6,7 @@
         android:title="Trang chủ"
         android:iconTint="@color/colorPink"/>
     <item
-        android:id="@+id/navigation_my_order"
+        android:id="@+id/navigation_cate"
         android:icon="@drawable/cate"
         android:title="Danh mục"
         android:iconTint="@color/colorPink"/>
