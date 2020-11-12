@@ -73,7 +73,7 @@
                     android:background="@drawable/custom_edittext_round"
                     android:drawableStart="@drawable/ic_search_24dp"
                     android:hint="Tìm kiếm"
-                    android:fontFamily="@font/alfa_slab_one"/>
+                     />
 
 
             <LinearLayout
@@ -92,7 +92,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/alfa_slab_one"
+
                     android:lineSpacingMultiplier="1.5"
                     android:text="HÀNG MỚI VỀ"
                     android:textColor="@color/colorBlack"
@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:fontFamily="@font/alfa_slab_one"
+
                     android:lineSpacingMultiplier="1.5"
                     android:text="TẤT CẢ SẢN PHẨM"
                     android:textColor="@color/colorBlack"

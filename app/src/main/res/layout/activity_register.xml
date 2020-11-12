@@ -31,7 +31,7 @@
                 app:navigationIcon="@drawable/ic_keyboard_backspace_24dp" />
 
             <TextView
-                android:fontFamily="@font/alfa_slab_one"
+
                 android:text="Tạo tài khoản mới"
                 android:textSize="30sp"
                 android:textStyle="bold"

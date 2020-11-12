@@ -8,7 +8,7 @@
     tools:context="com.src.Module.Category.view.ProductForCateActivity">
 
     <TextView
-        android:fontFamily="@font/alfa_slab_one"
+
         android:id="@+id/txtCateName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

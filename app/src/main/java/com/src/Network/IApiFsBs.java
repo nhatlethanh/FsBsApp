@@ -1,5 +1,13 @@
 package com.src.Network;
 
+import com.src.Model.BaseResponse;
+import com.src.Model.Cate;
+import com.src.Model.Gift;
+import com.src.Model.Images;
+import com.src.Model.Product;
+import com.src.Model.Review;
+import com.src.Model.User;
+
 import java.util.List;
 
 import okhttp3.MultipartBody;
@@ -11,13 +19,6 @@ import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
-import com.src.Model.BaseResponse;
-import com.src.Model.Cate;
-import com.src.Model.Gift;
-import com.src.Model.Images;
-import com.src.Model.Product;
-import com.src.Model.Review;
-import com.src.Model.User;
 
 
 public interface IApiFsBs {
@@ -63,8 +64,6 @@ public interface IApiFsBs {
 
     @GET("products/search")
     Call<BaseResponse<List<Product>>> getSearchProduct(@Query("search") String query);
-
-
 
 
     @FormUrlEncoded
