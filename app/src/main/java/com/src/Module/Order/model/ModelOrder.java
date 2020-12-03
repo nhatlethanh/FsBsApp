@@ -1,10 +1,13 @@
 package com.src.Module.Order.model;
 
+import android.util.Log;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.util.List;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -40,27 +43,6 @@ public class ModelOrder {
             @Override
             public void onFailure(Call<BaseResponse<String>> call, Throwable t) {
                 presenterOrder.resultAddCart(false, t.getMessage());
-
-            }
-        });
-    }
-
-    public void checkGift(String codeGift, PresenterOrder presenterOrder) {
-        Call<BaseResponse<Gift>> callGift = apiService.checkGift(codeGift);
-        callGift.enqueue(new Callback<BaseResponse<Gift>>() {
-            @Override
-            public void onResponse(Call<BaseResponse<Gift>> call, Response<BaseResponse<Gift>> response) {
-                if (response.isSuccessful()) {
-                    presenterOrder.resultCheckGift(true, response.body().getData(), "");
-                } else {
-                    ErrorResponse err = ErrorUtils.parseError(response);
-                    presenterOrder.resultCheckGift(false, null, err.getErr());
-                }
-            }
-
-            @Override
-            public void onFailure(Call<BaseResponse<Gift>> call, Throwable t) {
-                presenterOrder.resultCheckGift(false, null, t.getMessage());
 
             }
         });

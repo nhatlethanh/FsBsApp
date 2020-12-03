@@ -107,43 +107,8 @@ public class NavigationActivity extends AppCompatActivity {
             }
 
         });
-//        =========================CODE CŨ dự phòng đừng xóa
-//        ExploreFragment exploreFragment = new ExploreFragment();
-//        FavouriteFragment favouriteFragment = new FavouriteFragment();
-//        CateFragment cateFragment = new CateFragment();
-//        ProfileFragment profileFragment = new ProfileFragment();
-//
-//        adapter.addFragment(exploreFragment);
-//        adapter.addFragment(cateFragment);
-//        adapter.addFragment(favouriteFragment);
-//        adapter.addFragment(profileFragment);
-//        viewPager.setAdapter(adapter);
-    }
 
-//    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-//            = item -> {
-//
-//        switch (item.getItemId()) {
-//            case R.id.navigation_explore:
-//                viewPager.setCurrentItem(0);
-//
-//                return true;
-//            case R.id.navigation_my_order:
-//                viewPager.setCurrentItem(1);
-//
-//                return true;
-//            case R.id.navigation_favourite:
-//                viewPager.setCurrentItem(2);
-//
-//                return true;
-//            case R.id.navigation_profile:
-//                viewPager.setCurrentItem(3);
-//
-//                return true;
-//        }
-//        return false;
-//    };
-//=============================
+    }
 
     public void onClickBadge(View view) {
         startActivity(new Intent(getApplicationContext(), MyOrderActivity.class));

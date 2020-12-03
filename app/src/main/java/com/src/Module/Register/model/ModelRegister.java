@@ -14,7 +14,8 @@ import com.src.Utils.ErrorUtils;
 public class ModelRegister {
     public void register(User user, final PresenterRegister presenterRegister) {
         IApiFsBs apiService = APIFsBs.getAPIProduct().create(IApiFsBs.class);
-        Call<BaseResponse<User>> call = apiService.handlerRegister(user.getEmail(), user.getPassword(), user.getPhone(), user.getAddress(), user.getUsername());
+        Call<BaseResponse<User>> call = apiService.handlerRegister(user.getEmail(), user.getPassword(),
+                user.getPhone(), user.getAddress(), user.getUsername());
         call.enqueue(new Callback<BaseResponse<User>>() {
             @Override
             public void onResponse(Call<BaseResponse<User>> call, Response<BaseResponse<User>> response) {
