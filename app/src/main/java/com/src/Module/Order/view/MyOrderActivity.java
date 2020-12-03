@@ -59,7 +59,7 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
     private double totalPrice = 0;
     private GoogleProgressBar progressOrder;
     ExploreFragment exploreFragmentCallback = new ExploreFragment();
-
+    AlertDialog alertDialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -77,26 +77,17 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
         layoutCartEmpty = findViewById(R.id.layoutCartEmpty);
         layoutCart = findViewById(R.id.layoutCart);
         btnCheckoutCart = findViewById(R.id.btnCheckoutCart);
-        txtResultCheckGift = findViewById(R.id.txtResultCheckGift);
-        btnCheckGift = findViewById(R.id.btnCheckGift);
-        edtGift = findViewById(R.id.edtGift);
-        progressOrder = findViewById(R.id.progressOrder);
         presenterOrder = new PresenterOrder(this);
-        btnCheckGift.setOnClickListener(v -> getCodeGift());
+        progressOrder = findViewById(R.id.progressOrder);
+//        txtResultCheckGift = findViewById(R.id.txtResultCheckGift);
+//        btnCheckGift = findViewById(R.id.btnCheckGift);
+//        edtGift = findViewById(R.id.edtGift);
+//        btnCheckGift.setOnClickListener(v -> getCodeGift());
         Toolbar toolbar_MyOrder = findViewById(R.id.toolbar_MyOrder);
         toolbar_MyOrder.setNavigationOnClickListener(v -> finish());
 
 
         checkVisibleCart();
-    }
-
-    private void getCodeGift() {
-        String codeGift = edtGift.getText().toString();
-        if (!codeGift.isEmpty()) {
-            presenterOrder.checkGift(codeGift);
-        } else {
-            Toasty.error(MyOrderActivity.this, "Code Empty", Toasty.LENGTH_LONG).show();
-        }
     }
 
     private void handlerGetDataCart() {
@@ -192,12 +183,10 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
         @SuppressLint("InflateParams") View viewDialogPickUp = layoutInflater.inflate(R.layout.custom_dialog_success, null);
         builder.setView(viewDialogPickUp);
 
-
-        final AlertDialog alertDialog = builder.create();
+        alertDialog = builder.create();
         alertDialog.setCanceledOnTouchOutside(false);
         Objects.requireNonNull(alertDialog.getWindow()).setBackgroundDrawableResource(android.R.color.transparent);
         alertDialog.show();
-
 
         NavigationActivity.orderDetails.clear();
         NavigationActivity.numberBadge = 0;
@@ -207,28 +196,16 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
     }
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (alertDialog != null && alertDialog.isShowing()) {
+            alertDialog.dismiss();
+        }
+    }
+
+    @Override
     public void onFailed(String msg) {
 
     }
 
-    @Override
-    public void onCheckGiftSuccess(Gift gift) {
-        txtResultCheckGift.setVisibility(View.VISIBLE);
-        txtResultCheckGift.setTextColor(Color.BLUE);
-        txtResultCheckGift.setText("√ Giảm giá " + gift.getNumber());
-        try {
-            txtTotalPrice.setText(totalPrice * (1 - (Double.parseDouble(gift.getNumber()) / 100)) + " VND");
-
-        } catch (Exception e) {
-            Log.d("FsBs", "onCheckGiftSuccess: Exception " + e.getMessage());
-        }
-
-    }
-
-    @Override
-    public void onCheckGiftFailed(String msg) {
-        txtResultCheckGift.setVisibility(View.VISIBLE);
-        txtResultCheckGift.setTextColor(Color.RED);
-        txtResultCheckGift.setText(msg);
-    }
 }

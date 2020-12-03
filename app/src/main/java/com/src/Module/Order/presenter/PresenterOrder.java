@@ -32,21 +32,4 @@ public class PresenterOrder implements IOrder.IPresenterOrder {
         }
     }
 
-    @Override
-    public void checkGift(String codeGift) {
-        modelOrder.checkGift(codeGift,this);
-    }
-
-    @Override
-    public void resultCheckGift(boolean result, Gift gift, String msg) {
-        if(result){
-            iViewOrder.onCheckGiftSuccess(gift);
-        }else{
-            iViewOrder.onCheckGiftFailed(msg);
-        }
-    }
-
-
-
-
 }

@@ -82,6 +82,7 @@ public interface IApiFsBs {
     @FormUrlEncoded
     @POST("orders/add")
     Call<BaseResponse<String>> addOrder(@Field("order_details") String jsonOrderDetails, @Field("order") String jsonOrder);
+//    Call<ResponseBody> addOrder(@Body String jsonArray);
 
     @GET("orders/check_gift/{id}")
     Call<BaseResponse<Gift>> checkGift(@Path("id") String codeGift);
@@ -89,4 +90,5 @@ public interface IApiFsBs {
     //banner
     @GET("cates/list_banner")
     Call<BaseResponse<List<Images>>> getBanner();
+
 }

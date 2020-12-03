@@ -1,8 +1,8 @@
 package com.src.Network;
 
 public class EndPoint {
-    static String BASE_URL = "https://heinadmin.herokuapp.com/api/";
-    public static String BASE_URL_PUBLIC = "https://heinadmin.herokuapp.com/public/photo/";
+    static String BASE_URL = "http://192.168.1.8:5000/api/";
+    public static String BASE_URL_PUBLIC = "http://1192.168.1.8:5000/public/photo/";
 
     //**** User ****//
     static
