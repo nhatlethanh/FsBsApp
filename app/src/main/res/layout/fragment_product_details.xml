@@ -43,7 +43,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
-                    android:src="@drawable/ic_keyboard_backspace_24dp" />
+                    android:src="@drawable/ic_keyboard_backspace_white" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -157,9 +157,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-
             android:visibility="gone">
-
             <androidx.appcompat.widget.AppCompatRatingBar
                 android:id="@+id/rateBar"
                 android:layout_width="wrap_content"
