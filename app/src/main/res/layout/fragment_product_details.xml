@@ -150,7 +150,7 @@
             android:padding="10dp"
             android:text="Đánh giá sản phẩm"
             android:textColor="@color/colorBlack"
-            android:textSize="20dp" />
+            android:textSize="15dp" />
 
         <LinearLayout
             android:id="@+id/layoutWriteComment"
