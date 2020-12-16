@@ -12,7 +12,7 @@
         android:iconTint="@color/colorBlack"/>
     <item
         android:id="@+id/navigation_favourite"
-        android:icon="@drawable/ic_heart"
+        android:icon="@drawable/ic_heart2"
         android:title="Yêu thích"
         android:iconTint="@color/colorBlack"/>
     <item

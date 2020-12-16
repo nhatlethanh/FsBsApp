@@ -21,24 +21,35 @@
             android:textSize="40sp"
             android:layout_marginTop="20dp"
             android:textStyle="bold" />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:text="Email"
+            ></TextView>
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtEmailLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
-            android:hint="Email" />
-
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:text="Mật khẩu"
+            ></TextView>
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtPasswordLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
             android:layout_marginRight="30dp"
-            android:hint="Mật khẩu"
             android:inputType="textPassword"/>
 
         <Button
