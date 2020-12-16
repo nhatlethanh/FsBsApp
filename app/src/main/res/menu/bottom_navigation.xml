@@ -4,20 +4,20 @@
         android:id="@+id/navigation_explore"
         android:icon="@drawable/home"
         android:title="Trang chủ"
-        android:iconTint="@color/colorPink"/>
+        android:iconTint="@color/colorBlack"/>
     <item
         android:id="@+id/navigation_cate"
         android:icon="@drawable/cate"
         android:title="Danh mục"
-        android:iconTint="@color/colorPink"/>
+        android:iconTint="@color/colorBlack"/>
     <item
         android:id="@+id/navigation_favourite"
         android:icon="@drawable/ic_heart"
         android:title="Yêu thích"
-        android:iconTint="@color/colorPink"/>
+        android:iconTint="@color/colorBlack"/>
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_profile_nv"
         android:title="Tài khoản"
-        android:iconTint="@color/colorPink"/>
+        android:iconTint="@color/colorBlack"/>
 </menu>

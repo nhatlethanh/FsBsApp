@@ -15,7 +15,7 @@
         <TextView
 
             android:textSize="30dp"
-            android:textColor="@color/colorPink"
+            android:textColor="@color/colorBlack"
             android:text="Kết quả tìm kiếm"
             android:textStyle="bold"
             android:layout_margin="20dp"

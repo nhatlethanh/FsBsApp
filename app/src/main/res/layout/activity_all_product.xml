@@ -20,7 +20,7 @@
             android:textStyle="bold"
 
             android:text="Tất cả sản phẩm"
-            android:textColor="@color/colorPink"
+            android:textColor="@color/colorBlack"
             android:layout_gravity="center"
             android:textSize="30dp" />
 

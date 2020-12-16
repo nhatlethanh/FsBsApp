@@ -19,7 +19,7 @@
             android:gravity="center"
             android:lineSpacingMultiplier="1.0"
             android:text="H E I N"
-            android:textColor="@color/colorPink"
+            android:textColor="@color/colorBlack"
             android:textSize="80dp"
             android:textStyle="bold" />
 

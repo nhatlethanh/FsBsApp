@@ -97,7 +97,7 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="10dp"
                     android:text="-"
-                    android:textColor="@color/colorPink"
+                    android:textColor="@color/colorBlack"
                     android:textSize="20sp" />
 
                 <TextView
@@ -123,7 +123,7 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="10dp"
                     android:text="+"
-                    android:textColor="@color/colorPink"
+                    android:textColor="@color/colorBlack"
                     android:textSize="20sp" />
 
             </LinearLayout>

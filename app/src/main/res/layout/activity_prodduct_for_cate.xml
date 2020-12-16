@@ -16,7 +16,7 @@
         android:textStyle="bold"
         android:layout_gravity="center"
         android:text="Danh mục"
-        android:textColor="@color/colorPink"
+        android:textColor="@color/colorBlack"
         android:textSize="30dp" />
 
     <androidx.recyclerview.widget.RecyclerView

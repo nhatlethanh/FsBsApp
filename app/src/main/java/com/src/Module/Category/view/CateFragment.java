@@ -51,7 +51,7 @@ public class CateFragment extends Fragment implements ICate.IViewCate,ICate.IOnC
         int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.margin5);;
 
         CateAdapter cateAdapter = new CateAdapter(getActivity(),R.layout.custom_item_cate,cateList,this);
-        recyclerCate.setLayoutManager(new StaggeredGridLayoutManager(1, LinearLayout.VERTICAL));
+        recyclerCate.setLayoutManager(new StaggeredGridLayoutManager(2, LinearLayout.VERTICAL));
         recyclerCate.addItemDecoration(new ItemOffsetDecoration(spacingInPixels));
         recyclerCate.setAdapter(cateAdapter);
         cateAdapter.notifyDataSetChanged();

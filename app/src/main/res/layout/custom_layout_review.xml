@@ -44,7 +44,7 @@
                 android:id="@+id/txtNameUserReview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPink"
+                android:textColor="@color/colorBlack"
                 android:textSize="@dimen/text_size_15"
                 tools:text="Người dùng" />
 

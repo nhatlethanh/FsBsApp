@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:text="SẢN PHẨM YÊU THÍCH"
-            android:textColor="@color/colorPink"
+            android:textColor="@color/colorBlack"
             android:textSize="30dp" />
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewFavourite"

@@ -15,7 +15,8 @@
         android:layout_height="?actionBarSize"
         android:navigationIcon="@drawable/ic_keyboard_backspace_24dp"
         android:title="Giỏ hàng của bạn"
-        android:titleTextColor="@color/colorBlack" />
+        android:titleTextColor="@color/colorBlack"
+        />
 
     <LinearLayout
         android:id="@+id/layoutCartEmpty"

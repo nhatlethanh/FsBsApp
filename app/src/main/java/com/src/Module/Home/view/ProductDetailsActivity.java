@@ -112,16 +112,11 @@ public class ProductDetailsActivity extends AppCompatActivity implements IProduc
         recyclerReviewAdapter = findViewById(R.id.recyclerReview);
         progress_review = findViewById(R.id.progress_review);
         txtNoComment = findViewById(R.id.txtNoComment);
-
         DialogLoading.LoadingGoogle(true, progress_review);
-
         presenterProductDetails = new PresenterProductDetails(this);
         txtWriteComment.setOnClickListener(v -> layoutWriteComment.setVisibility(View.VISIBLE));
-
         imgBackProductDetails.setOnClickListener(v -> finish());
-
         btnOrderNowDetails.setOnClickListener(v -> orderProduct());
-
         imgFavouriteProductDetails.setOnClickListener(v -> {
             checkedFavourite = handlerFavourite(product.getProductId());
             Editor editor = sharedPreferences.edit();
@@ -154,14 +149,14 @@ public class ProductDetailsActivity extends AppCompatActivity implements IProduc
             }
             if (exits) {
 
-                Toasty.warning(Objects.requireNonNull(ProductDetailsActivity.this), "Sản phẩm đã có trong giỏ hàng", Toasty.LENGTH_LONG).show();
+                Toasty.warning(Objects.requireNonNull(ProductDetailsActivity.this), "Sản phẩm đã có trong giỏ hàng", Toasty.LENGTH_SHORT).show();
 
             } else {
 
                 OrderProvisional order = new OrderProvisional(product, 1);
                 NavigationActivity.orderDetails.add(order);
                 NavigationActivity.numberBadge = NavigationActivity.numberBadge + 1;
-                Toasty.success(Objects.requireNonNull(ProductDetailsActivity.this), "Sản phẩm đã được thêm vào giỏ hàng", Toasty.LENGTH_LONG).show();
+                Toasty.success(Objects.requireNonNull(ProductDetailsActivity.this), "Sản phẩm đã được thêm vào giỏ hàng", Toasty.LENGTH_SHORT).show();
                 exploreFragmentCallback.OnClickBadge();
 
             }

@@ -32,68 +32,92 @@
 
             <TextView
 
-                android:text="Tạo tài khoản mới"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:layout_marginTop="30dp"
-                android:textColor="@color/colorPink"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:layout_gravity="center"
+
+                android:text="Tạo tài khoản mới"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Địa chỉ email" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtEmailRegister"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:hint="Địa chỉ email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginRight="30dp" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Tên người dùng" />
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtUserNameRegister"
-                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:hint="Tên người dùng"
+              />
+            <TextView
+                android:id="@+id/textView5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Số điện thoại" />
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtPhoneRegister"
                 android:inputType="phone"
-                android:layout_marginTop="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:hint="Số điện thoại"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Mật khẩu" />
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtPasswordRegister"
-                android:layout_marginTop="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:hint="Mật khẩu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"/>
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:id="@+id/edtPasswordRegister2"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="30dp"-->
-<!--                android:layout_marginTop="30dp"-->
-<!--                android:layout_marginRight="30dp"-->
-<!--                android:hint="Mật khẩu"-->
-<!--                android:inputType="textPassword" />-->
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Địa chỉ" />
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
+
                 android:layout_marginRight="30dp"
-                android:hint="Địa chỉ"
+
                 />
 
             <Button
@@ -101,8 +125,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
-                android:background="@color/colorPink"
-                android:text="Đăng kí"
+                android:background="@color/colorBlack"
+                android:text="Đăng kí ngay"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/text_size_20" />

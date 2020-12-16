@@ -59,8 +59,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:orientation="vertical">
 
+            android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KHÁM PHÁ NGAY"
+
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorBlack">
+
+                </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ứng dụng của chúng tôi"
+                android:textSize="20dp"
+
+                android:textColor="@color/gray">
+
+            </TextView>
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtSearch"
@@ -68,7 +87,8 @@
                     android:layout_height="wrap_content"
                     android:maxLines="1"
                     android:inputType="text"
-                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:imeOptions="actionSearch"
                     android:background="@drawable/custom_edittext_round"
                     android:drawableStart="@drawable/ic_search_24dp"

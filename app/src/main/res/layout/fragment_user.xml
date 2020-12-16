@@ -169,7 +169,7 @@
                 android:background="@drawable/shadow_pink"
                 android:text="Đăng xuất"
                 android:layout_margin="20dp"
-                android:textColor="@color/colorPink" />
+                android:textColor="@color/colorBlack" />
 
 
         </LinearLayout>
