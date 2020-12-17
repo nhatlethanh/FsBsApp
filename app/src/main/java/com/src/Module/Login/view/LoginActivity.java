@@ -48,9 +48,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         edtPasswordLogin = findViewById(R.id.edtPasswordLogin);
         googleProgressBar = findViewById(R.id.google_progress);
         presenterLogin = new PresenterLogin(this,getApplicationContext());
-
-        edtEmailLogin.setText("abc@gmail.com");
-        edtPasswordLogin.setText("123456");
+//
+        edtEmailLogin.setText("@gmail.com");
+//        edtPasswordLogin.setText("123456");
         btnLogin.setOnClickListener(this);
         signUpNew.setOnClickListener(this);
 

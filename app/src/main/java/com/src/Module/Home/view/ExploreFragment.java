@@ -235,7 +235,7 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
     @Override
     public void onSearchProductFailed(String msg) {
         DialogLoading.LoadingGoogle(false, progressBarExplore);
-        Toasty.warning(getActivity(), msg, Toasty.LENGTH_LONG).show();
+        Toasty.warning(getActivity(), msg, Toasty.LENGTH_SHORT).show();
     }
 
     @Override
@@ -252,11 +252,9 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
     public void OnClickBadge() {
         try {
             badge.setNumber(NavigationActivity.numberBadge);
-
         } catch (Exception e) {
             Log.d("FsBs", "OnClickBadge: " + e.getMessage());
         }
-
     }
 
     @Override
