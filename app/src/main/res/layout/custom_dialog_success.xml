@@ -20,7 +20,7 @@
         android:gravity="center"
 
         android:textColor="@color/colorBlack"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:text="Đặt đơn hàng thành công!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

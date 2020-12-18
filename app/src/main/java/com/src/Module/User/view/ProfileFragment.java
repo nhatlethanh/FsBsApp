@@ -73,7 +73,7 @@ public class ProfileFragment extends Fragment implements IViewProfile, View.OnCl
                 new Handler().postDelayed(() -> {
                     startActivity(new Intent(getActivity(), LoginActivity.class));
                     getActivity().finish();
-                },1000);
+                },500);
             }
         });
 

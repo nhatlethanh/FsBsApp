@@ -65,7 +65,7 @@ public class PresenterProduct implements IProduct.IPresenterProduct {
             }
 
         }else{
-            iViewProduct.onSearchProductFailed("Lỗi");
+            iViewProduct.onSearchProductFailed("Không thể tìm kiếm");
         }
     }
 }
