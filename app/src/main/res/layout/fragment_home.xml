@@ -58,7 +58,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
 
             android:orientation="vertical">
                 <TextView
@@ -74,8 +74,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ứng dụng của chúng tôi"
-                android:textSize="20dp"
+                android:text="ứng dụng mua sắm dành cho phái mạnh"
+                android:textSize="15dp"
 
                 android:textColor="@color/gray">
 
