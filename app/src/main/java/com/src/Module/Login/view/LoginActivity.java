@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onFailed(String msg) {
         DialogLoading.LoadingGoogle(false,googleProgressBar);
-        Toasty.error(LoginActivity.this, "loi dang nhap", Toast.LENGTH_SHORT, true).show();
+        Toasty.error(LoginActivity.this, "Lỗi đăng nhập", Toast.LENGTH_SHORT, true).show();
 
     }
 

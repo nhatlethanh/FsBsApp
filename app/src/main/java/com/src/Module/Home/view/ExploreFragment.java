@@ -137,14 +137,14 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
 
         DialogLoading.LoadingGoogle(true, progressBarExplore);
 
-
+// 3lấy danh sách sản phẩm
         presenterProduct.getListProductMore(new Random().nextInt(5));
         presenterProduct.getNewListProduct();
         presenterBanner.getBanner();
         handlerSearch();
 
     }
-
+//1tìm kiếm sản phầm lấy theo tên trong data
     private void handlerSearch() {
         edtSearch.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
