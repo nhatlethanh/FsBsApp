@@ -183,10 +183,10 @@
                 android:id="@+id/btnLogout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="20dp"
-                android:background="@drawable/shadow_pink"
+                android:layout_margin="30dp"
+                android:background="@color/colorBlack"
                 android:text="Đăng xuất"
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/colorWhite" />
 
 
         </LinearLayout>
