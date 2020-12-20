@@ -170,7 +170,7 @@ public class ProductDetailsActivity extends AppCompatActivity implements IProduc
 
 
     }
-
+// xử lý đánh giá khách hàng
     @SuppressLint("CheckResult")
     private void handlerComment() {
         String comment = Objects.requireNonNull(edtComment.getText()).toString().trim();
@@ -190,7 +190,7 @@ public class ProductDetailsActivity extends AppCompatActivity implements IProduc
 
     @Override
     public void onSuccessAddComment(String msg) {
-        txtNoComment.setVisibility(View.GONE);
+        txtNoComment.setVisibility(View.GONE); //Thuộc tính View.GONE sẽ giúp bạn ẩn 1 view đi hoàn toàn, nó sẽ biến mất và các view khác sẽ chiếm lấy vị trí của nó.
         edtComment.setText("");
         rateBar.setRating(0);
         DialogLoading.LoadingGoogle(false, progress_review);
@@ -217,6 +217,8 @@ public class ProductDetailsActivity extends AppCompatActivity implements IProduc
             showReview(reviews);
         }else {
             txtNoComment.setVisibility(View.VISIBLE);
+            //Thuốc tính View.INVISIBLE giúp bạn chỉ ẩn View đó đi và không cho nó hiện lên nhưng nó vẫn giữ vị trí trong toàn bộ Giao diện đó,
+            // Không View nào có thể chiếm lấy vị trí mà nó đang đứng.
         }
     }
 
@@ -245,6 +247,8 @@ public class ProductDetailsActivity extends AppCompatActivity implements IProduc
         recyclerReviewAdapter.setLayoutManager(new LinearLayoutManager(ProductDetailsActivity.this, LinearLayoutManager.VERTICAL, true));
         recyclerReviewAdapter.setAdapter(reviewAdapter);
         reviewAdapter.notifyDataSetChanged();
+        // khi được gọi, nó sẽ xem những mục nào được hiển thị trên màn hình tại thời điểm cuộc gọi của nó
+        // (chính xác hơn là chỉ mục hàng nào) và gọi getView() với các vị trí đó.
     }
 
 

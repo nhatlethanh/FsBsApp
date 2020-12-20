@@ -206,7 +206,7 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
         Toasty.error(Objects.requireNonNull(getActivity()), msg, Toasty.LENGTH_LONG).show();
 
     }
-
+//tìm kiếm sản phẩm
     @Override
     public void onSearchProductSuccess(List<Product> productList) {
         DialogLoading.LoadingGoogle(false, progressBarExplore);

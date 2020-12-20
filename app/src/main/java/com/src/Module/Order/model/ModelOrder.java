@@ -23,15 +23,16 @@ import com.src.Utils.ErrorUtils;
 public class ModelOrder {
     IApiFsBs apiService = APIFsBs.getAPIProduct().create(IApiFsBs.class);
         /// object sang json và ngược lại
+    // chuyển json thành object java
     public void addToCart(Order order, List<OrderDetails> orderDetails, PresenterOrder presenterOrder) {
-        Gson gson = new GsonBuilder().create();
+        Gson gson = new GsonBuilder().create(); //khởi tạo Gson
 
         Call<BaseResponse<String>> callOrder = apiService.addOrder(gson.toJson(orderDetails), gson.toJson(order));
 
         callOrder.enqueue(new Callback<BaseResponse<String>>() {
             @Override
             public void onResponse(Call<BaseResponse<String>> call, Response<BaseResponse<String>> response) {
-                if (response.isSuccessful()) {
+                if (response.isSuccessful()) { //nếu phản hồi thành công thì get data thành công
                     presenterOrder.resultAddCart(true, response.body().getData());
                 } else {
                     ErrorResponse err = ErrorUtils.parseError(response);
