@@ -22,7 +22,7 @@ import com.src.Utils.ErrorUtils;
 
 public class ModelOrder {
     IApiFsBs apiService = APIFsBs.getAPIProduct().create(IApiFsBs.class);
-
+        /// object sang json và ngược lại
     public void addToCart(Order order, List<OrderDetails> orderDetails, PresenterOrder presenterOrder) {
         Gson gson = new GsonBuilder().create();
 

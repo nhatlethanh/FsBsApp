@@ -78,17 +78,13 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
         btnCheckoutCart = findViewById(R.id.btnCheckoutCart);
         presenterOrder = new PresenterOrder(this);
         progressOrder = findViewById(R.id.progressOrder);
-//        txtResultCheckGift = findViewById(R.id.txtResultCheckGift);
-//        btnCheckGift = findViewById(R.id.btnCheckGift);
-//        edtGift = findViewById(R.id.edtGift);
-//        btnCheckGift.setOnClickListener(v -> getCodeGift());
         Toolbar toolbar_MyOrder = findViewById(R.id.toolbar_MyOrder);
         toolbar_MyOrder.setNavigationOnClickListener(v -> finish());
 
 
         checkVisibleCart();
     }
-
+    // xử lý nhận dữ liệu từ giỏ hàng
     private void handlerGetDataCart() {
         adapterCartProvisional = new AdapterCartProvisional(MyOrderActivity.this, NavigationActivity.orderDetails, this);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MyOrderActivity.this, LinearLayoutManager.VERTICAL, false);
@@ -99,7 +95,7 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
         btnCheckoutCart.setOnClickListener(v -> checkOut());
 
     }
-
+// thanh toán
     private void checkOut() {
         DialogLoading.LoadingGoogle(true,progressOrder);
         String orderId = String.valueOf(new Random().nextInt(900000));
@@ -116,7 +112,7 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
         Order order = new Order(orderId, NavigationActivity.numberBadge, totalPrice, "Đang chờ xác nhận");
         presenterOrder.addCartToServer(order, orderDetailsList);
     }
-
+    // tăng số lượng sản phẩm trong giỏ hàng
     @Override
     public void increase(OrderProvisional orderProvisional, TextView numberCart) {
         orderProvisional.setAmount(orderProvisional.getAmount() + 1);
@@ -124,6 +120,7 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
         handlerTotalPrice();
     }
 
+    // giảm và xóa sản phẩm trong giỏ hàng
     @SuppressLint("SetTextI18n")
     @Override
     public void reduce(OrderProvisional orderProvisional, TextView numberCart) {
@@ -133,7 +130,7 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
                     .setTitle("Thông báo")
                     .setMessage("Bạn có muốn xoá sản phẩm " + orderProvisional.getProduct().getName())
                     .setPositiveButton("Có", (dialog, which) -> {
-                        NavigationActivity.orderDetails.remove(orderProvisional);
+                        NavigationActivity.orderDetails.remove(orderProvisional); //giảm sô ở giỏ hàng tạm thời
                         NavigationActivity.numberBadge = NavigationActivity.numberBadge - 1;
                         exploreFragmentCallback.OnClickBadge();
                         adapterCartProvisional.notifyDataSetChanged();
@@ -149,7 +146,7 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
 
 
     }
-
+    // xử lý tính tổng số tiền đơn hàng
     private void handlerTotalPrice() {
         totalPrice = 0;
         for (OrderProvisional i : NavigationActivity.orderDetails) {

@@ -55,7 +55,7 @@ public class PresenterProduct implements IProduct.IPresenterProduct {
         modelProduct.handlerSearch(query, this);
     }
 
-    @Override
+    @Override // nếu không có sản phẩm thì không thể tìm kiếm
     public void resultSearch(boolean success, List<Product> productList) {
         if (success) {
             if (productList != null && productList.size() > 0) {
