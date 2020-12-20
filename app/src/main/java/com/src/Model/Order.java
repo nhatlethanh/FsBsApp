@@ -2,7 +2,7 @@ package com.src.Model;
 
 public class Order {
     private String orderId;
-        private int totalAmount;
+    private int totalAmount;
         private double totalPrice;
         private String status;
 
@@ -11,12 +11,13 @@ public class Order {
         this.totalAmount = totalAmount;
         this.totalPrice = totalPrice;
         this.status = status;
+
     }
 
     public Order() {
     }
-
-
+    public String getOrderId() {return  orderId;}
+    public  void  setOrderId(String orderId) {this.orderId = orderId;}
 
     public int getTotalAmount() {
         return totalAmount;
@@ -43,5 +44,7 @@ public class Order {
     public void setStatus(String status) {
         this.status = status;
     }
+
+
 }
 

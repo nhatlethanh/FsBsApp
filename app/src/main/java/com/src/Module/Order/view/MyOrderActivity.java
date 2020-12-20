@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import androidx.annotation.Nullable;
@@ -52,14 +53,12 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
     private TextView txtTotalPrice, txtTotalAmount;
     private LinearLayout layoutCartEmpty, layoutCart;
     private AdapterCartProvisional adapterCartProvisional;
-    private Button btnCheckoutCart, btnCheckGift;
+    private Button btnCheckoutCart;
     private PresenterOrder presenterOrder;
-    private TextView txtResultCheckGift;
-    private TextInputEditText edtGift;
     private double totalPrice = 0;
     private GoogleProgressBar progressOrder;
     ExploreFragment exploreFragmentCallback = new ExploreFragment();
-    AlertDialog alertDialog;
+//    AlertDialog alertDialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -114,9 +113,7 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
             orderDetails.setProductId(i.getProduct().getProductId());
             orderDetailsList.add(orderDetails);
         }
-        Order order = new Order(orderId, NavigationActivity.numberBadge, totalPrice, "Waitting");
-
-
+        Order order = new Order(orderId, NavigationActivity.numberBadge, totalPrice, "Đang chờ xác nhận");
         presenterOrder.addCartToServer(order, orderDetailsList);
     }
 
@@ -176,17 +173,19 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
 
     @Override
     public void onSuccess(String msg) {
-        DialogLoading.LoadingGoogle(false,progressOrder);
+//        DialogLoading.LoadingGoogle(false,progressOrder);
         //cart
-        final AlertDialog.Builder builder = new AlertDialog.Builder(MyOrderActivity.this);
+        final AlertDialog.Builder   builder = new AlertDialog.Builder(MyOrderActivity.this);
         LayoutInflater layoutInflater = getLayoutInflater();
         @SuppressLint("InflateParams") View viewDialogPickUp = layoutInflater.inflate(R.layout.custom_dialog_success, null);
         builder.setView(viewDialogPickUp);
 
-        alertDialog = builder.create();
+
+        final AlertDialog alertDialog = builder.create();
         alertDialog.setCanceledOnTouchOutside(false);
         Objects.requireNonNull(alertDialog.getWindow()).setBackgroundDrawableResource(android.R.color.transparent);
         alertDialog.show();
+
 
         NavigationActivity.orderDetails.clear();
         NavigationActivity.numberBadge = 0;
@@ -194,14 +193,14 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
 
         new Handler().postDelayed(() -> finish(), 3000);
     }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (alertDialog != null && alertDialog.isShowing()) {
-            alertDialog.dismiss();
-        }
-    }
+//
+//    @Override
+//    protected void onDestroy() {
+//        super.onDestroy();
+//        if (alertDialog != null && alertDialog.isShowing()) {
+//            alertDialog.dismiss();
+//        }
+//    }
 
     @Override
     public void onFailed(String msg) {

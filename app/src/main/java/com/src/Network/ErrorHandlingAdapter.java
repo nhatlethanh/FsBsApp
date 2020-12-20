@@ -95,7 +95,7 @@ public final class ErrorHandlingAdapter {
                 @Override public void onResponse(Call<T> call, Response<T> response) {
                     // TODO if 'callbackExecutor' is not null, the 'callback' methods should be executed
                     // on that executor by submitting a Runnable. This is left as an exercise for the reader.
-                    Log.d("FsBs", "onResponse: day ne " + response.body().toString());
+                    Log.d("FsBs", "onResponse: Đây " + response.body().toString());
                     int code = response.code();
                     if(response.isSuccessful()){
                         if (code >= 200 && code < 300) {
@@ -123,7 +123,7 @@ public final class ErrorHandlingAdapter {
                 }
 
                 @Override public void onFailure(Call<T> call, Throwable t) {
-                    // TODO if 'callbackExecutor' is not null, the 'callback' methods should be executed
+                    // zTODO if 'callbackExecutor' is not null, the 'callback' methods should be executed
                     // on that executor by submitting a Runnable. This is left as an exercise for the reader.
 
                     if (t instanceof IOException) {

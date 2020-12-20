@@ -13,7 +13,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import com.src.Model.BaseResponse;
 import com.src.Model.ErrorResponse;
-import com.src.Model.Gift;
 import com.src.Model.Order;
 import com.src.Model.OrderDetails;
 import com.src.Module.Order.presenter.PresenterOrder;
@@ -43,7 +42,6 @@ public class ModelOrder {
             @Override
             public void onFailure(Call<BaseResponse<String>> call, Throwable t) {
                 presenterOrder.resultAddCart(false, t.getMessage());
-
             }
         });
     }

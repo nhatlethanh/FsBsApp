@@ -20,9 +20,9 @@ public class APIFsBs {
                         .build();
                 return chain.proceed(newRequest);
             })
-                    .connectTimeout(10, TimeUnit.SECONDS)
+                    .connectTimeout(60, TimeUnit.MINUTES)
                     .writeTimeout(10, TimeUnit.SECONDS)
-                    .readTimeout(30, TimeUnit.SECONDS)
+                    .readTimeout(10, TimeUnit.SECONDS)
                     .build();
 
 

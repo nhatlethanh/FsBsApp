@@ -38,10 +38,8 @@ public class NavigationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_navigation);
-
         navigation = findViewById(R.id.navigation);
-//        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         viewPager = findViewById(R.id.viewNavigation);
         viewPager.setOffscreenPageLimit(1);
 
@@ -49,32 +47,6 @@ public class NavigationActivity extends AppCompatActivity {
         if (orderDetails == null) {
             orderDetails = new ArrayList<>();
         }
-//
-        navigation.setOnNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.navigation_explore:
-                    viewPager.setCurrentItem(0);
-                    break;
-                case R.id.navigation_cate:
-                    viewPager.setCurrentItem(1);
-                    break;
-                case R.id.navigation_favourite:
-                    viewPager.setCurrentItem(2);
-                    break;
-                case R.id.navigation_profile:
-                    viewPager.setCurrentItem(3);
-                    break;
-            }
-            return true;
-        });
-//
-        setupViewPager(viewPager);
-    }
-
-
-    private void setupViewPager(ViewPager viewPager) {
-        ViewPagerNavigationAdapter adapter = new ViewPagerNavigationAdapter(getSupportFragmentManager());
-        viewPager.setAdapter(adapter);
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -85,20 +57,15 @@ public class NavigationActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
                 Log.d("FsBs", "onPageSelected: " + position);
-                switch (position){
-                    case 0:
-                        navigation.getMenu().findItem(R.id.navigation_explore).setChecked(true);
-                        break;
-                    case 1:
-                        navigation.getMenu().findItem(R.id.navigation_cate).setChecked(true);
-                        break;
-                    case 2:
-                        navigation.getMenu().findItem(R.id.navigation_favourite).setChecked(true);
-                        break;
-                    case 3:
-                        navigation.getMenu().findItem(R.id.navigation_profile).setChecked(true);
-                        break;
+                if (prevMenuItem != null) {
+                    prevMenuItem.setChecked(false);
+                } else {
+                    navigation.getMenu().getItem(0).setChecked(false);
                 }
+
+                navigation.getMenu().getItem(position).setChecked(true);
+                prevMenuItem = navigation.getMenu().getItem(position);
+
             }
 
             @Override
@@ -107,8 +74,46 @@ public class NavigationActivity extends AppCompatActivity {
             }
 
         });
-
+        setupViewPager(viewPager);
     }
+
+
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerNavigationAdapter adapter = new ViewPagerNavigationAdapter(getSupportFragmentManager());
+        ExploreFragment exploreFragment = new ExploreFragment();
+        FavouriteFragment favouriteFragment = new FavouriteFragment();
+        CateFragment cateFragment = new CateFragment();
+        ProfileFragment profileFragment = new ProfileFragment();
+        adapter.addFragment(exploreFragment);
+        adapter.addFragment(cateFragment);
+        adapter.addFragment(favouriteFragment);
+        adapter.addFragment(profileFragment);
+        viewPager.setAdapter(adapter);
+    }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = item -> {
+
+        switch (item.getItemId()) {
+            case R.id.navigation_explore:
+                viewPager.setCurrentItem(0);
+                return true;
+            case R.id.navigation_cate:
+                viewPager.setCurrentItem(1);
+
+                return true;
+            case R.id.navigation_favourite:
+                viewPager.setCurrentItem(2);
+
+                return true;
+            case R.id.navigation_profile:
+                viewPager.setCurrentItem(3);
+
+                return true;
+        }
+        return false;
+    };
+
 
     public void onClickBadge(View view) {
         startActivity(new Intent(getApplicationContext(), MyOrderActivity.class));
