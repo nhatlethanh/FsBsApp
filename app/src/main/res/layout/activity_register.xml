@@ -23,24 +23,19 @@
             android:orientation="vertical"
             android:layout_height="wrap_content"
             tools:context="com.src.Module.Register.view.RegisterActivity">
-
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarRegister"
                 android:layout_width="match_parent"
                 android:layout_height="41dp"
                 app:navigationIcon="@drawable/ic_keyboard_backspace_24dp" />
-
             <TextView
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-
                 android:text="Tạo tài khoản mới"
                 android:textColor="@color/colorBlack"
                 android:textSize="30sp"
                 android:textStyle="bold" />
-
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
@@ -49,13 +44,11 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 android:text="Địa chỉ email" />
-
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtEmailRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-
                 android:layout_marginRight="30dp" />
             <TextView
                 android:id="@+id/textView4"
@@ -115,11 +108,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-
                 android:layout_marginRight="30dp"
-
                 />
-
             <Button
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
@@ -130,7 +120,6 @@
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/text_size_20" />
-
         </LinearLayout>
 
     </FrameLayout>

@@ -3,16 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-
     xmlns:android="http://schemas.android.com/apk/res/android">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/white"
         tools:context="com.src.Utils.SplashScreenActivity">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,23 +21,20 @@
             android:textColor="@color/colorBlack"
             android:textSize="80dp"
             />
-
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="400dp"
             app:srcCompat="@drawable/bg" />
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:layout_margin="20dp"
-            android:text="Thời trang không nhất thiết phải đến từ nhãn mác, thương hiệu. Thời trang đến từ những thứ ẩn bên trong tâm hồn, tính cách của bạn" />
-
+            android:text="Thời trang không nhất thiết phải đến từ nhãn mác,
+            thương hiệu. Thời trang đến từ những thứ ẩn bên trong tâm hồn, tính cách của bạn" />
         <Button
-
             android:id="@+id/btnLoginSplash"
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -49,6 +43,5 @@
             android:background="@drawable/icon_gotologin"
             android:textAllCaps="false"
             android:textColor="@color/colorBlack" />
-
     </LinearLayout>
 </FrameLayout>
