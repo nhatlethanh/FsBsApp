@@ -183,11 +183,8 @@ public class ProductDetailsActivity extends AppCompatActivity implements IProduc
             Toasty.warning(Objects.requireNonNull(ProductDetailsActivity.this), "Rate?", Toasty.LENGTH_LONG);
         }
         DialogLoading.LoadingGoogle(true, progress_review);
-
         presenterProductDetails.addCommentToServer(comment, product.getProductId(), rate);
-
     }
-
     @Override
     public void onSuccessAddComment(String msg) {
         txtNoComment.setVisibility(View.GONE); //Thuộc tính View.GONE sẽ giúp bạn ẩn 1 view đi hoàn toàn, nó sẽ biến mất và các view khác sẽ chiếm lấy vị trí của nó.
@@ -197,21 +194,15 @@ public class ProductDetailsActivity extends AppCompatActivity implements IProduc
         Toasty.success(Objects.requireNonNull(ProductDetailsActivity.this), "Bình luận thành công", Toasty.LENGTH_LONG).show();
         layoutWriteComment.setVisibility(View.GONE);
         presenterProductDetails.getComment(product.getProductId());
-
     }
-
     @Override
     public void onFailedAddComment(String msg) {
-
         DialogLoading.LoadingGoogle(false, progress_review);
         Toasty.warning(Objects.requireNonNull(ProductDetailsActivity.this), "Có lỗi xảy ra, vui lòng thử lại!", Toasty.LENGTH_LONG).show();
-
     }
-
     @Override
     public void onSuccessGetComment(List<Review> reviews) {
         DialogLoading.LoadingGoogle(false, progress_review);
-
         if (!reviews.isEmpty()) {
             txtNoComment.setVisibility(View.GONE);
             showReview(reviews);
@@ -221,7 +212,6 @@ public class ProductDetailsActivity extends AppCompatActivity implements IProduc
             // Không View nào có thể chiếm lấy vị trí mà nó đang đứng.
         }
     }
-
     @Override
     public void onFailedGetComment(String msg) {
         Toasty.error(getApplicationContext(), msg, Toasty.LENGTH_LONG).show();

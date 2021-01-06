@@ -72,7 +72,6 @@ public class FavouriteFragment extends Fragment implements IProduct.IViewProduct
             }
         }
         Log.d("FsBs", "onGetListProductSuccess: " + productListFavourite.size());
-
         if (productListFavourite.size() > 0) {
             layoutFavourite.setVisibility(View.VISIBLE);
             layoutFavouriteEmpty.setVisibility(View.GONE);

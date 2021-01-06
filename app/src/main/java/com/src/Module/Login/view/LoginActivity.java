@@ -102,8 +102,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             edtPasswordLogin.setError("Password Invalid");
             edtPasswordLogin.requestFocus();
             return false;
-
-
         }
         return  true;
     }

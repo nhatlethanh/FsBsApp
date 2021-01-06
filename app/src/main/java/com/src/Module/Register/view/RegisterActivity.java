@@ -63,8 +63,6 @@ public class RegisterActivity extends AppCompatActivity implements IViewRegister
         btnRegister = findViewById(R.id.btnRegister);
         presenterRegister = new PresenterRegister(this);
     }
-
-
     @Override
     public void onSuccess() {
         DialogLoading.LoadingGoogle(false, progress_register);
@@ -76,15 +74,12 @@ public class RegisterActivity extends AppCompatActivity implements IViewRegister
                 finish();
             }
         }, 3000);
-
     }
-
     @Override
     public void onFailed(String msg) {
         DialogLoading.LoadingGoogle(false, progress_register);
         Toasty.error(RegisterActivity.this, msg, Toast.LENGTH_SHORT, true).show();
     }
-
     private boolean validation() {
         String email = edtEmailRegister.getText().toString().trim();
         String password = edtPasswordRegister.getText().toString().trim();
@@ -99,37 +94,27 @@ public class RegisterActivity extends AppCompatActivity implements IViewRegister
             edtEmailRegister.setError("Email Invalid");
             edtEmailRegister.requestFocus();
             return false;
-
         } else if (username.length() == 0) {
             edtUserNameRegister.setError("Username Invalid");
             edtUserNameRegister.requestFocus();
             return false;
-
         } else if (phone.length() == 0) {
             edtPhoneRegister.setError("Phone Invalid");
             edtPhoneRegister.requestFocus();
             return false;
-
-
         } else if (phone.length() != 10) {
             edtPhoneRegister.setError("Phone 10");
             edtPhoneRegister.requestFocus();
             return false;
-
-
         } else if (password.length() == 0) {
             edtPasswordRegister.setError("Password Invalid");
             edtPasswordRegister.requestFocus();
             return false;
-
-
         } else if (password.length() < 6) {
             edtPasswordRegister.setError("Password < 6");
             edtPasswordRegister.requestFocus();
             return false;
-
         }
-
         return true;
     }
 }

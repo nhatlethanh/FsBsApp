@@ -162,12 +162,9 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
     }
 
     private void loadData() {
-
         NewProductAdapter newProductAdapter = new NewProductAdapter(getActivity(), R.layout.custom_layout_new_product, productsNew, this, "News");
         NewProductAdapter allProductAdapter = new NewProductAdapter(getActivity(), R.layout.custom_layout_new_product, products, this, "All");
-
         int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.margin5);
-
         recyclerNewProduct.setLayoutManager(new GridLayoutManager(getActivity(), 2));
         recyclerNewProduct.addItemDecoration(new ItemOffsetDecoration(spacingInPixels));
         recyclerNewProduct.setNestedScrollingEnabled(false);
@@ -177,8 +174,6 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
         recyclerAllProduct.addItemDecoration(new ItemOffsetDecoration(spacingInPixels));
         recyclerAllProduct.setAdapter(allProductAdapter);
         allProductAdapter.notifyDataSetChanged();
-
-
     }
 
     @Override
@@ -217,7 +212,6 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
             RecyclerView recyclerSearch = dialog.findViewById(R.id.recyclerSearch);
             TextView txtCloseDialogSearch = dialog.findViewById(R.id.txtCloseDialogSearch);
             NewProductAdapter searchAdapter = new NewProductAdapter(getActivity(), R.layout.custom_layout_new_product, productList, this, "Search");
-
             txtCloseDialogSearch.setOnClickListener(v -> dialog.dismiss());
             int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.margin5);
             recyclerSearch.setLayoutManager(new GridLayoutManager(getActivity(), 2));
@@ -226,7 +220,6 @@ public class ExploreFragment extends Fragment implements IProduct.IViewProduct, 
             recyclerSearch.setAdapter(searchAdapter);
             searchAdapter.notifyDataSetChanged();
             dialog.show();
-
         } else {
             Toasty.info(getActivity(), "Sản phẩm không tồn tại", Toasty.LENGTH_LONG).show();
         }

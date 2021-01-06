@@ -12,30 +12,21 @@ import com.src.NavigationActivity;
 import com.R;
 import com.src.Module.Login.view.LoginActivity;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN);
-
         setContentView(R.layout.activity_splash_screen);
-//        APIFsBs.init(getApplicationContext());
-        SharedPreferences pref = getSharedPreferences("User", MODE_PRIVATE);
-        String token = pref.getString("token", null);
-        findViewById(R.id.btnLoginSplash).setOnClickListener(new View.OnClickListener() {
+        new Timer().schedule(new TimerTask() {
             @Override
-            public void onClick(View v) {
-                findViewById(R.id.btnLoginSplash).setClickable(false);
-                if (token != null) {
-                    startActivity(new Intent(SplashScreenActivity.this, NavigationActivity.class));
-                } else {
-                    startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
-                }
-                finish();
-
-
+            public void run() {
+                startActivity(new Intent(getApplicationContext(),NavigationActivity.class));
             }
-        });
+        }, 2000);
     }
 }
